@@ -4,8 +4,10 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Senior Front End Designer [@SportNgin](http://sportngin.com) - Eternally Minnesotan, Forever Curious… / Web Designer & Front-end Developer / Typographer / Coder / UI / UX /
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+# Past
+Interactive Designer [@SportNgin](http://sportngin.com)
+UX Designer II [@bestbuy](http://bestbuy.com)
+Design & Implementation Specialist [@imagetrend](http://imagetrend.com)
+Designer, Maker Thinker [@projectM](http://projectmlab.com)
