@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "New post"
-date:   2015-03-23 00:09:58
+date:   2015-11-10 00:10:34
 categories: front-end markup html css javascript sass scss process
 ---
 Test post duh
