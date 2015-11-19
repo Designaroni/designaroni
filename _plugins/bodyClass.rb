@@ -12,7 +12,8 @@ class BodyClassTag < Liquid::Tag
       prefix = "#{prefix}_"
     end
 
-    "#{prefix}#{id}"
+    # "#{prefix}#{id}"
+    "#{id}"
   end
 
   def render(context)
