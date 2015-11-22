@@ -3,10 +3,11 @@ title: designaroni.github.io
 email: hello@designaroni.com
 description: > # this means to ignore newlines until "baseurl:"
   Senior Front End Designer @SportNgin - Eternally Minnesotan, Forever Curious… / Web Designer & Front-end Developer / Typographer / Coder / UI / UX /
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "//" # the subpath of your site, e.g. /blog/
 url: "http://designaroni.com" # the base hostname & protocol for your site
 twitter_username: designaroni
 github_username:  designaroni
+hasComments: "#disqus_thread"
 
 # Build settings
 markdown: kramdown

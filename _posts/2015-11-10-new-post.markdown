@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "New post"
+title:  "New Post"
 date:   2015-11-10 00:10:34
-categories: front-end markup html css javascript sass scss process
+categories: front-end markup
 ---
 Test post duh
 
