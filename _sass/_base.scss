@@ -130,13 +130,15 @@ code {
     font-size: 15px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: #282C34;
+    color: $grey-color-light ;
 }
-
 code {
     padding: 1px 5px;
 }
-
+p code {
+    white-space: nowrap;
+}
 pre {
     padding: 8px 12px;
     overflow-x: scroll;

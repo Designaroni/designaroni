@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Basic Jekyll markdown & syntax to know"
-date:   2015-03-23 00:09:58
+title:  "Basic Jekyll markdown & syntax"
+date:   2015-11-23 00:05:00
 categories: jekyll update
 leadImage: leadImage.jpg
 ---
-If you are using the basic Jekyll theme posts can be found in your `_posts` directory. You can edit existing blog posts for the site to see how your changes take affetc. Additionally creating a new blog post is as easy as adding a new markdown file within the `_posts` directory.
+If you are using the basic Jekyll theme posts can be found in your `_posts` directory. You can edit existing blog posts for the site to see how your changes take affect. Additionally creating a new blog post is as easy as adding a new markdown file within the `_posts` directory.
 
 #### Protip!
-> Using the YAML front matter you can set a published state for your posts by placing `published: false` in the front matter.
+> Using the YAML front matter you can set a published state for your posts by setting `published: false` as a parameter within the front matter.
 
  You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server. `jekyll serve` also watches & auto-regenerates your site when a file is updated.
 
@@ -19,7 +19,7 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 Jekyll also offers powerful support for inline code blocks & syntax highlighting:
 
 ### Example code blocks:
-The opening liquid statement <code>{% raw %}{% highlight ruby %}{% endraw %}</code> followed by <code>{% raw %}{% endhighlight %}{% endraw %}</code> will wrap code in a block and highlight based on the ***ruby*** syntax. Replace the ***ruby*** language name with your prefered language to highlight other languages as well.
+The opening liquid statement <code>{% raw %}{% highlight ruby %}{% endraw %}</code> followed by <code>{% raw %}{% endhighlight %}{% endraw %}</code> will wrap code in a block and highlight based on the ***ruby*** syntax. Replace the ***ruby*** language name with your preferred language to highlight other languages as well.
 
 #### Protip!
 > Liquid tags get processed by the rendering engine before compiling your static pages. In order to write inline liquid you need to wrap your statements in a code block and raw tag as follows.
@@ -31,7 +31,7 @@ The opening liquid statement <code>{% raw %}{% highlight ruby %}{% endraw %}</co
 </pre>
 
 #### Extra Protip!
-> In order to write the code and raw tags above the leading less that characters and need to be written as html entities
+> In order to write the code and raw tags above the leading less than character needs to be written as an html entity
 
 {% highlight html %}
 <pre>
@@ -61,12 +61,33 @@ print_hi('Tom')
   <p>Paragraph text</p>
 </div>
 {% endhighlight %}
-### Example CSS
-{% highlight css %}
+### Example SCSS
+{% highlight scss %}
   .body{
     background: honeydew;
     color: #333;
   }
+  .post-content {
+    margin-bottom: $spacing-unit;
+  h2 {
+    font-size: 32px;
+    @include media-query($on-laptop) {
+        font-size: 28px;
+    }
+  }
+  h3 {
+    font-size: 26px;
+    @include media-query($on-laptop) {
+        font-size: 22px;
+    }
+  }
+  h4 {
+    font-size: 20px;
+    @include media-query($on-laptop) {
+        font-size: 18px;
+    }
+  }
+}
 {% endhighlight %}
 
 ### Example Javascript
@@ -81,6 +102,8 @@ function doStuff() {
 }
 dostuff();
 {% endhighlight %}
+
+### Linking Images to Jekyll templates & Using them in markdown files
 
 
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. Bugs & feature requests can be filed at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them below in the comments or officially on [Jekyll’s dedicated Help repository][jekyll-help].
