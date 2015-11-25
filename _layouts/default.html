@@ -3,6 +3,11 @@
   {% include head.html %}
   <body class="{{ page.bodyClass }}" >
     {% include header.html %}
+    {% if page.leadImage %}
+      <div class="leadImage">
+        <img src="{{ page.leadImage }}" />
+      </div>
+    {% endif %}
     <div class="page-content">
       <div class="wrapper">
         {{ content }}
