@@ -3,6 +3,7 @@ layout: post
 title:  "Basic Jekyll markdown & syntax"
 date:   2015-11-23 00:05:00
 categories: jekyll update
+tags: Front-end Jekyll html css markdown
 leadImage: /assets/unsplash_vadim_sherbakov.jpeg
 ---
 If you are using the basic Jekyll theme posts can be found in your `_posts` directory. You can edit existing blog posts for the site to see how your changes take affect. Additionally creating a new blog post is as easy as adding a new markdown file within the `_posts` directory.
@@ -162,7 +163,9 @@ Add `title` text by wrapping title in quotes prior to closing the URL parenthesi
 
 `![alt text]({% raw %}{{ page.leadImage }}{% endraw %} "title text")`
 
-#### That's initially about it
+#### That's initially about it…
+
+Basic Jekyll docs, repo & help repo below
 
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. Bugs & feature requests can be filed at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them below in the comments or officially on [Jekyll’s dedicated Help repository][jekyll-help].
 
