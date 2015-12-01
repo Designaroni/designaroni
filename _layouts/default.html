@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body class="{{ page.bodyClass }}" >
+  <body class="{{ page.bodyClass }} fade-in fast" >
     {% include header.html %}
     {% if page.leadImage %}
       <div class="leadImage">
         <img src="{{ page.leadImage }}" />
+        <header class="post-header fade-in">
+          <h1 class="post-title">{{ page.title }}</h1>
+          <p class="post-meta">
+            {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+            <span class="post-comments">
+              <a href="{{ post.url | prepend: site.baseurl | append: site.hasComments }}">Comments</a>
+            </span>
+          </p>
+        </header>
       </div>
     {% endif %}
     <div class="page-content">

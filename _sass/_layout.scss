@@ -234,3 +234,25 @@
         }
     }
 }
+
+.leadImage {
+  position: relative;
+
+  .post-header {
+    background: rgba(234, 234, 234, 0.88);
+    position: absolute;
+    padding: 15px;
+    top: 35%;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+  .post-title {
+    font-size: 4vmax;
+  }
+  .post-meta {
+    margin: 0;
+  }
+}
