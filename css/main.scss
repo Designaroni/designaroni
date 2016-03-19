@@ -1,5 +1,4 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
 
@@ -23,14 +22,17 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
 $content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
+// breakpoints
+$x-small:      320px;
+$small:        400px;
+$medium:       600px;
+$large:        800px;
+$x-large:      1200px;
 
 
 
 // Using media queries with like this:
-// @include media-query($on-palm) {
+// @include media-query($medium) {
 //     .wrapper {
 //         padding-right: $spacing-unit / 2;
 //         padding-left: $spacing-unit / 2;

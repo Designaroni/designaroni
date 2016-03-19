@@ -7,13 +7,15 @@
       <div class="leadImage">
         <img src="{{ page.leadImage }}" />
         <header class="post-header fade-in">
-          <h1 class="post-title">{{ page.title }}</h1>
-          <p class="post-meta">
-            {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
-            <span class="post-comments">
-              <a href="{{ post.url | prepend: site.baseurl | append: site.hasComments }}">Comments</a>
-            </span>
-          </p>
+          <div class="post-header-innner-wrap">
+            <h1 class="post-title">{{ page.title }}</h1>
+            <p class="post-meta">
+              {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+              <span class="post-comments">
+                <a href="{{ post.url | prepend: site.baseurl | append: site.hasComments }}">Comments</a>
+              </span>
+            </p>
+          </div>
         </header>
       </div>
     {% endif %}

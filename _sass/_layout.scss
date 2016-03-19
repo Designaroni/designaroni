@@ -41,7 +41,7 @@
         }
     }
 
-    @include media-query($on-palm) {
+    @include media-query($medium) {
         position: absolute;
         top: 9px;
         right: 30px;
@@ -135,7 +135,7 @@
     width:         calc(45% - (#{$spacing-unit} / 2));
 }
 
-@include media-query($on-laptop) {
+@include media-query($large) {
     .footer-col-1,
     .footer-col-2 {
         width: -webkit-calc(50% - (#{$spacing-unit} / 2));
@@ -148,7 +148,7 @@
     }
 }
 
-@include media-query($on-palm) {
+@include media-query($medium) {
     .footer-col {
         float: none;
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
@@ -202,7 +202,7 @@
     letter-spacing: -1px;
     line-height: 1;
 
-    @include media-query($on-laptop) {
+    @include media-query($large) {
         font-size: 36px;
     }
 }
@@ -213,7 +213,7 @@
     h2 {
         font-size: 32px;
 
-        @include media-query($on-laptop) {
+        @include media-query($large) {
             font-size: 28px;
         }
     }
@@ -221,7 +221,7 @@
     h3 {
         font-size: 26px;
 
-        @include media-query($on-laptop) {
+        @include media-query($large) {
             font-size: 22px;
         }
     }
@@ -229,7 +229,7 @@
     h4 {
         font-size: 20px;
 
-        @include media-query($on-laptop) {
+        @include media-query($large) {
             font-size: 18px;
         }
     }
@@ -239,20 +239,34 @@
   position: relative;
 
   .post-header {
-    background: rgba(234, 234, 234, 0.88);
     position: absolute;
-    padding: 15px;
     top: 35%;
-    width: 60%;
     text-align: center;
     margin: auto;
     left: 0;
     right: 0;
+    @include media-query($large) {
+      top:25%;
+    }
+    @include media-query($medium) {
+      top:15%;
+    }
   }
   .post-title {
     font-size: 4vmax;
+    @include media-query($medium) {
+      font-size: 3vmax;
+    }
+    @include media-query($small) {
+      font-size: 2vmax;
+    }
   }
   .post-meta {
     margin: 0;
+  }
+  .post-header-innner-wrap {
+    display: inline-block;
+    background: rgba(234, 234, 234, 0.88);
+    padding: 15px;
   }
 }
