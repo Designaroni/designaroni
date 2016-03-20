@@ -5,6 +5,7 @@ date:   2015-11-23 00:05:00
 categories: jekyll update
 tags: Front-end Jekyll html css markdown
 leadImage: /assets/unsplash_vadim_sherbakov_26-9.jpeg
+leadImageAlt: "Basic Jekyll markdown & syntax"
 ---
 If you are using the basic Jekyll theme posts can be found in your `_posts` directory. You can edit existing blog posts for the site to see how your changes take affect. Additionally creating a new blog post is as easy as adding a new markdown file within the `_posts` directory.
 
