@@ -1,3 +1,4 @@
+exclude: [vendor]
 # Site settings
 title: designaroni.github.io
 email: hello@designaroni.com
