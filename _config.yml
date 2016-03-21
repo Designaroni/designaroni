@@ -1,4 +1,5 @@
 exclude: [vendor]
+include: ['_pages']
 # Site settings
 title: designaroni.github.io
 email: hello@designaroni.com
@@ -9,6 +10,11 @@ url: "http://designaroni.com" # the base hostname & protocol for your site
 twitter_username: designaroni
 github_username:  designaroni
 hasComments: "#disqus_thread"
-
+fadeImg: 'onload="fadeImg(this)" style="display: none;"'
+fadeEl: 'onload="fadeEl(this)" style="display: none;"'
+fadePauseFast: fade-in pause-fast
+fadePauseSlow: fade-in pause-slow
+fadeSlow:      fade-in slow
+fadeFast:      fade-in fast
 # Build settings
 markdown: kramdown

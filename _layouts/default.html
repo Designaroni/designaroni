@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body class="{{ page.bodyClass }} fade-in fast" >
+  <body class="{{ page.bodyClass }}" >
     {% include header.html %}
     {% if page.leadImage %}
-      <div class="leadImage">
-        <img src="{{ page.leadImage }}" alt="{{ page.leadImageAlt }}"/>
-        <header class="post-header fade-in">
+      <div class="leadImage" style="height:calc(100vw * (9/26));">
+        <img src="{{ page.leadImage }}" alt="{{ page.leadImageAlt }}" {{ site.fadeImg }} />
+        <header class="post-header {{ site.fadePauseFast }}">
           <div class="post-header-innner-wrap">
             <h1 class="post-title">{{ page.title }}</h1>
             <p class="post-meta">
@@ -19,7 +19,7 @@
         </header>
       </div>
     {% endif %}
-    <div class="page-content">
+    <div class="page-content {{ site.fadePauseSlow }}">
       <div class="wrapper">
         {{ content }}
       </div>
@@ -27,5 +27,6 @@
     {% include adOneTextResponsive.html %}
     {% include footer.html %}
     {% include commentscount.html %}
+    {% include scripts_footer.html %}
   </body>
 </html>
