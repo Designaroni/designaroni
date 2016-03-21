@@ -9,6 +9,7 @@ url: "http://designaroni.com" # the base hostname & protocol for your site
 twitter_username: designaroni
 github_username:  designaroni
 hasComments: "#disqus_thread"
+fadeImg: onload="fadeIn(this)" style="visibility: hidden;"
 
 # Build settings
 markdown: kramdown
