@@ -1,4 +1,4 @@
-function fadeIn(el) {
+function fadeImg(el) {
   $(el).delay(100).fadeIn(300);
 }
 // function leadImgHeight(el) {
