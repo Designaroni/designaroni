@@ -16,5 +16,7 @@ fadePauseFast: fade-in pause-fast
 fadePauseSlow: fade-in pause-slow
 fadeSlow:      fade-in slow
 fadeFast:      fade-in fast
+fontSans: tk-jaf-facitweb
+fontSerif: tk-bookmania
 # Build settings
 markdown: kramdown
