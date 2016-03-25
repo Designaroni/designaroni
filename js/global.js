@@ -1,3 +1,5 @@
+---
+---
 function fadeImg(el) {
   $(el).delay(100).fadeIn(300);
 }
@@ -8,3 +10,8 @@ function fadeImg(el) {
 $(window).on('resize', function() {
   $('.leadImage').removeAttr('style');
 });
+$(document).ready( function() {
+  $('{{ site.headingEls }}').each( function() {
+    $(this).addClass('{{ site.fontSans }}');
+  })
+})

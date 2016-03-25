@@ -16,5 +16,8 @@ fadePauseFast: fade-in pause-fast
 fadePauseSlow: fade-in pause-slow
 fadeSlow:      fade-in slow
 fadeFast:      fade-in fast
+fontSans: tk-jaf-facitweb
+fontSerif: tk-bookmania
+headingEls: h1, h2, h3, h4, h5, h6, .site-header
 # Build settings
 markdown: kramdown
