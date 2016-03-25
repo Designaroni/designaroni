@@ -2,46 +2,12 @@
 ---
 @charset "utf-8";
 
-
 $headings: '{{ site.headingEls }}';
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
 
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #444c5a;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-// breakpoints
-$x-small:      320px;
-$small:        400px;
-$medium:       600px;
-$large:        800px;
-$x-large:      1200px;
-
-
-// Using media queries with like this:
-// @include media-query($medium) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
+@import "_settings";
+@import "_functions";
+@import "_extends";
+@import "_mixins";
 
 
 

@@ -41,7 +41,7 @@
         }
     }
 
-    @include media-query($medium) {
+    @include mqmax($medium) {
         position: absolute;
         top: 9px;
         right: 30px;
@@ -135,7 +135,7 @@
     width:         calc(45% - (#{$spacing-unit} / 2));
 }
 
-@include media-query($large) {
+@include mqmax($large) {
     .footer-col-1,
     .footer-col-2 {
         width: -webkit-calc(50% - (#{$spacing-unit} / 2));
@@ -148,7 +148,7 @@
     }
 }
 
-@include media-query($medium) {
+@include mqmax($medium) {
     .footer-col {
         float: none;
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
@@ -202,7 +202,7 @@
     letter-spacing: -1px;
     line-height: 1;
 
-    @include media-query($large) {
+    @include mqmax($large) {
         font-size: 36px;
     }
 }
@@ -211,26 +211,25 @@
     margin-bottom: $spacing-unit;
 
     h2 {
-        font-size: 48px;
-        margin-top: 48px;
-        line-height: 1.5em;
-        @include media-query($large) {
+        font-size: 32px;
+
+        @include mqmax($large) {
             font-size: 28px;
         }
     }
 
     h3 {
-        font-size: 32px;
+        font-size: 26px;
 
-        @include media-query($large) {
+        @include mqmax($large) {
             font-size: 22px;
         }
     }
 
     h4 {
-        font-size: 24px;
+        font-size: 20px;
 
-        @include media-query($large) {
+        @include mqmax($large) {
             font-size: 18px;
         }
     }
@@ -246,19 +245,19 @@
     margin: auto;
     left: 0;
     right: 0;
-    @include media-query($large) {
+    @include mqmax($large) {
       top:25%;
     }
-    @include media-query($medium) {
+    @include mqmax($medium) {
       top:15%;
     }
   }
   .post-title {
     font-size: 4vmax;
-    @include media-query($medium) {
+    @include mqmax($medium) {
       font-size: 3vmax;
     }
-    @include media-query($small) {
+    @include mqmax($small) {
       font-size: 2vmax;
     }
   }
