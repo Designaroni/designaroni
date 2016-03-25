@@ -11,7 +11,7 @@ $(window).on('resize', function() {
   $('.leadImage').removeAttr('style');
 });
 $(document).ready( function() {
-  $('h1, h2, h3, h4, h5, h6, .site-header').each( function() {
+  $('{{ site.headingEls }}').each( function() {
     $(this).addClass('{{ site.fontSans }}');
   })
 })

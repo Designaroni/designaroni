@@ -16,7 +16,7 @@ If you are using the basic Jekyll theme posts can be found in your `_posts` dire
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and include the necessary front matter.
 
-### Jekyll & Inline Code Blocks: Syntax Highlighting
+## Jekyll & Inline Code Blocks: Syntax Highlighting
 
 Jekyll also offers powerful support for inline code blocks & syntax highlighting:
 
@@ -56,7 +56,7 @@ The opening liquid statement `{% raw %}{% highlight ruby %}{% endraw %}` followe
 
     ``<pre><code>`&#123;% raw %}&#123;% highlight ruby %}&#123;% endraw %}`</code></pre>``
 
-### Languages Jekyll Syntax Highlighting Supports:
+## Languages Jekyll Syntax Highlighting Supports:
 Jekyll supports syntax highlighting for over [100 languages][languages] thanks to [Pygments][pygments]
 
 ### Example Ruby
@@ -118,7 +118,7 @@ function doStuff() {
 dostuff();
 {% endhighlight %}
 
-### Linking Images to Jekyll Templates & Using Them in Markdown
+## Linking Images to Jekyll Templates & Using Them in Markdown
 
 #### Images in Templates
 
