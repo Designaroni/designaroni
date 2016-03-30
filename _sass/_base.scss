@@ -148,19 +148,6 @@ pre {
         padding-left: $spacing-unit / 2;
     }
 }
-
-/**
- * Clearfix
- */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-
 /**
  * Icons
  */
@@ -177,6 +164,7 @@ pre {
         }
     }
 }
+/***/
 html {
   opacity: 0;
   transition: opacity 100ms;

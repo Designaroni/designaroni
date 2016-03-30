@@ -1,0 +1,21 @@
+.profile {
+  border-radius: 100%;
+  border: 2px solid lightslategray;
+  display: inline-block;
+  overflow: hidden;
+  width: 25%;
+  box-sizing: border-box;
+  float: left;
+  @include media-query($medium) {
+    width: 30%;
+    float: none;
+    margin: 10px 35%;
+  }
+}
+.profileDescription {
+  float: right;
+  width: 70%;
+  @include media-query($medium) {
+    width: 100%;
+  }
+}

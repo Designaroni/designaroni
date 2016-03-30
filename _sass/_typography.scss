@@ -1,3 +1,42 @@
 #{$headings} {
   line-height: 2;
+  color: darkslategray;
+}
+.post-title {
+  @include media-query($large) {
+    font-size: 36px;
+  }
+}
+.post-content {
+  h2 {
+    font-size: 48px;
+    margin-top: 48px;
+    line-height: 1.5em;
+    @include media-query($large) {
+      font-size: 28px;
+    }
+  }
+  h3 {
+    font-size: 32px;
+    @include media-query($large) {
+      font-size: 22px;
+    }
+  }
+  h4 {
+    font-size: 24px;
+    @include media-query($large) {
+      font-size: 18px;
+    }
+  }
+}
+.leadImage {
+  .post-title {
+    font-size: 4vmax;
+    @include media-query($medium) {
+      font-size: 3vmax;
+    }
+    @include media-query($small) {
+      font-size: 2vmax;
+    }
+  }
 }

@@ -1,15 +1,21 @@
-/**
- * Site header
- */
+.col {
+  float: left;
+  width: 50%;
+  @include media-query($medium) {
+    width: 100%;
+  }
+  .about & ul {
+    margin-bottom: 0;
+    list-style: none;
+  }
+}
 .site-header {
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
-
     // Positioning context for the mobile navigation icon
     position: relative;
 }
-
 .site-title {
     font-size: 26px;
     line-height: 56px;
@@ -201,39 +207,10 @@
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
-
-    @include media-query($large) {
-        font-size: 36px;
-    }
 }
 
 .post-content {
     margin-bottom: $spacing-unit;
-
-    h2 {
-        font-size: 48px;
-        margin-top: 48px;
-        line-height: 1.5em;
-        @include media-query($large) {
-            font-size: 28px;
-        }
-    }
-
-    h3 {
-        font-size: 32px;
-
-        @include media-query($large) {
-            font-size: 22px;
-        }
-    }
-
-    h4 {
-        font-size: 24px;
-
-        @include media-query($large) {
-            font-size: 18px;
-        }
-    }
 }
 
 .leadImage {
@@ -251,15 +228,6 @@
     }
     @include media-query($medium) {
       top:15%;
-    }
-  }
-  .post-title {
-    font-size: 4vmax;
-    @include media-query($medium) {
-      font-size: 3vmax;
-    }
-    @include media-query($small) {
-      font-size: 2vmax;
     }
   }
   .post-meta {
