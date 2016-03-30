@@ -14,6 +14,7 @@ html, body {
   @include fw(four);
   line-height: 1.5em;
   margin: 1.5em 0 .5em 0;
+  color: darkslategray;
 }
 %h1 {
   @include fsi(50,"px");
@@ -77,4 +78,42 @@ h6 {
 }
 p {
   @extend %p;
+}
+.post-title {
+  @include mqmax($large) {
+    font-size: 36px;
+  }
+}
+.post-content {
+  h2 {
+    font-size: 48px;
+    margin-top: 48px;
+    line-height: 1.5em;
+    @include mqmax($large) {
+      font-size: 28px;
+    }
+  }
+  h3 {
+    font-size: 32px;
+    @include mqmax($large) {
+      font-size: 22px;
+    }
+  }
+  h4 {
+    font-size: 24px;
+    @include mqmax($large) {
+      font-size: 18px;
+    }
+  }
+}
+.leadImage {
+  .post-title {
+    font-size: 4vmax;
+    @include mqmax($medium) {
+      font-size: 3vmax;
+    }
+    @include mqmax($small) {
+      font-size: 2vmax;
+    }
+  }
 }

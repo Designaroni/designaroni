@@ -1,22 +1,18 @@
 ---
 ---
 @charset "utf-8";
-
 $headings: '{{ site.headingEls }}';
-
-@import "_settings";
-@import "_functions";
-@import "_extends";
-@import "_mixins";
-
-
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+  "settings",
+  "functions",
+  "mixins",
   "animations",
   "base",
   "layout",
   "typography.scss",
   "syntax-highlighting",
-  "google_modifications"
+  "google_modifications",
+  "modules",
+  "extends";
 ;
