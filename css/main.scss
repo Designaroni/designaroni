@@ -4,8 +4,9 @@
 $headings: '{{ site.headingEls }}';
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-  "variables",
-  "includes",
+  "settings",
+  "functions",
+  "mixins",
   "animations",
   "base",
   "layout",

@@ -1,9 +1,86 @@
-#{$headings} {
-  line-height: 2;
+//some typography defined in config.yml & global.js
+//Site base typography
+html, body {
+  @include ff(one);
+  @include fw(two);
+  @include fst(one);
+  color: $text-color;
+  @include fsi(16,"px");
+}
+// heading typography overrides
+// extend pulls all selectors together
+%headers {
+  @include ff(one);
+  @include fw(four);
+  line-height: 1.5em;
+  margin: 1.5em 0 .5em 0;
   color: darkslategray;
 }
+%h1 {
+  @include fsi(50,"px");
+}
+%h2 {
+  @include fsi(40,"px");
+}
+%h3 {
+  @include fsi(20,"px");
+  margin: initial;
+  padding: 0;
+}
+%h4 {
+  @include fsi(25,"px");
+}
+%h5 {
+  @include fsi(22,"px");
+}
+%h6 {
+  @include fsi(20,"px");
+}
+%p {
+  @include fsi(16,"px");
+  @include fw(two);
+  line-height: normal;
+  // margin-bottom: auto;
+}
+%removeAut {
+  margin:auto;
+}
+#{$headings} {
+  @extend %headers;
+  @at-root {
+    .site-header {
+      @extend %removeAut;
+    }
+  }
+}
+h1 {
+  @extend %h1;
+  @at-root {
+    .post-title {
+      @extend %removeAut;
+    }
+  }
+}
+h2 {
+  @extend %h2;
+}
+h3 {
+  @extend %h3;
+}
+h4 {
+  @extend %h4;
+}
+h5 {
+  @extend %h5;
+}
+h6 {
+  @extend %h6;
+}
+p {
+  @extend %p;
+}
 .post-title {
-  @include media-query($large) {
+  @include mqmax($large) {
     font-size: 36px;
   }
 }
@@ -12,19 +89,19 @@
     font-size: 48px;
     margin-top: 48px;
     line-height: 1.5em;
-    @include media-query($large) {
+    @include mqmax($large) {
       font-size: 28px;
     }
   }
   h3 {
     font-size: 32px;
-    @include media-query($large) {
+    @include mqmax($large) {
       font-size: 22px;
     }
   }
   h4 {
     font-size: 24px;
-    @include media-query($large) {
+    @include mqmax($large) {
       font-size: 18px;
     }
   }
@@ -32,10 +109,10 @@
 .leadImage {
   .post-title {
     font-size: 4vmax;
-    @include media-query($medium) {
+    @include mqmax($medium) {
       font-size: 3vmax;
     }
-    @include media-query($small) {
+    @include mqmax($small) {
       font-size: 2vmax;
     }
   }

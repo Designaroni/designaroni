@@ -1,0 +1,22 @@
+@mixin ff($key) {
+  font-family: fontFamily($key);
+}
+@mixin fw($key) {
+  font-weight: fontWeight($key);
+}
+@mixin fst($key) {
+  font-style: fontStyle($key);
+}
+@mixin fsi($key, $value) {
+  font-size: $key#{unquote($value)};
+}
+@mixin centerWidth($key) {
+  width: $key;
+  margin: auto;
+  position: relative;
+}
+@mixin mqmax($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}

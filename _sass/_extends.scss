@@ -1,8 +1,13 @@
 %clearfix {
+  &:before, &:after {
+    content:" ";
+    display:table;
+  }
   &:after {
-      content: "";
-      display: table;
-      clear: both;
+    clear:both;
+  }
+  & {
+    *zoom:1;
   }
 }
 .clear {

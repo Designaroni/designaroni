@@ -22,3 +22,21 @@ $small:        400px;
 $medium:       600px;
 $large:        800px;
 $x-large:      1200px;
+
+$fontFamilys: (
+  "one"     : unquote("'jaf-facitweb', sans-serif"),
+  "two"     : unquote("'bookmania', sans-serif")
+);
+$fontWeights: (
+  "one"     : 300,
+  "two"     : 400,
+  "three"   : 700,
+  "four"    : 800
+);
+$fontStyles: (
+  "one"     : normal,
+  "two"     : italic
+);
+$breakpoints: (
+  "large"   : 1200px
+);

@@ -86,19 +86,19 @@ print_hi('Tom')
     margin-bottom: $spacing-unit;
   h2 {
     font-size: 32px;
-    @include media-query($large) {
+    @include mqmax($large) {
         font-size: 28px;
     }
   }
   h3 {
     font-size: 26px;
-    @include media-query($large) {
+    @include mqmax($large) {
         font-size: 22px;
     }
   }
   h4 {
     font-size: 20px;
-    @include media-query($large) {
+    @include mqmax($large) {
         font-size: 18px;
     }
   }
