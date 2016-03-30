@@ -7,7 +7,7 @@ bodyClass: about
 ---
 
 <div class="profile">
-  <img src="{{ page.profileImage }}">
+  <img src="{{ page.profileImage }}" alt="Ian Roberts Profile Front End Developer">
 </div>
 
 <div class="profileDescription">
