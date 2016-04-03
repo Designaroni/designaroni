@@ -19,3 +19,27 @@
     width: 100%;
   }
 }
+.post-list {
+  > li {
+    position: relative;
+    text-align: center;
+    h2 {
+      margin: 0 auto;
+      display: inline-block;
+      line-height: 1.5;
+      @include vert-horz-align(absolute);
+      top:20%;
+    }
+    .post-subtitle {
+      @include vert-horz-align(absolute);
+    }
+    .post-meta {
+      @include vert-horz-align(absolute);
+      top: 87%;
+      color: white;
+    }
+    .post-link {
+      display: block;
+    }
+  }
+}

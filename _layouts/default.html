@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
-  <body class="{{ page.bodyClass }} {{ site.fontSerif }}" >
+  <body class="{{ page.bodyClass }} {{ site.fontSerif }} preload" >
     {% include header.html %}
     {% if page.leadImage %}
       <div class="leadImage" style="height:calc(100vw * (9/26));">

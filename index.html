@@ -7,10 +7,16 @@ bodyClass: home
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+          {% if post.leadImage %}
+            <img src="{{ post.leadImage }}" alt="{{ post.leadImageAlt }}">
+          {% endif %}
+          <h2 class="post-title">
+            {{ post.title }}
+          </h2>
+          <span class="post-subtitle">{{ post.subtitle}}</span>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </a>
       </li>
     {% endfor %}
   </ul>

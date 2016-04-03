@@ -15,3 +15,6 @@ $(document).ready( function() {
     $(this).addClass('{{ site.fontSans }}');
   })
 })
+$(window).load(function() {
+  $("body").removeClass("preload");
+});

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Basic Jekyll markdown & syntax"
+subtitle: "Writing, Running & Working with Jekyll"
 date:   2015-11-23 00:05:00
 categories: jekyll update
 tags: Front-end Jekyll html css markdown
