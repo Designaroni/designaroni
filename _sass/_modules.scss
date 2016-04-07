@@ -43,3 +43,107 @@
     }
   }
 }
+.post-group {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  &:before {
+    content: '';
+    height: 1px;
+    width: 100%;
+    top: calc(37px / 2);
+    background: darkslategray;
+    position: absolute;
+    border-bottom: 1px solid #eee;
+  }
+  .post-group-title {
+    font-size: 18px;
+    background: $postTitle;
+    display: inline-flex;
+    padding: 5px;
+    margin: 0 auto 10px;
+    color: whitesmoke;
+    text-transform: capitalize;
+    position: relative;
+    border: 0px solid white;
+    border-right-width: 3px;
+    border-left-width: 3px;
+  }
+  .post-item-group {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    .post-item {
+      padding: 10px 5px;
+      flex:1 0 calc(25% - 10px);
+      min-width: calc(25% - 10px);
+      position: relative;
+      @include mqmax($content-width) {
+        flex: 1 0 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+        min-width: initial;
+      }
+      @include mqmax($medium) {
+        max-width: initial;
+      }
+      @include mqmax(430px) {
+        min-width: 100%;
+      }
+      .post-link {
+        display: block;
+        @include mqmax($medium) {
+          width: calc(130px * (26/9));
+          margin: auto;
+          position: relative;
+        }
+        @include mqmax(430px) {
+          width: 100%;
+        }
+        .post-title,
+        .post-subtitle {
+          transition: color 300ms;
+        }
+        &:hover {
+          text-decoration: none;
+          .post-title,
+          .post-subtitle {
+            color:grey;
+          }
+        }
+      }
+      .post-title {
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: initial;
+        text-transform: capitalize;
+        color:$postTitle;
+      }
+      .post-subtitle {
+        font-size: 16px;
+        color: $postSubtitle;
+        text-transform: capitalize;
+      }
+      .post-meta {
+        position: absolute;
+        top: 10px;
+        left: 5px;
+        color: white;
+        background: rgba(73, 165, 188, 0.67);
+        padding: 5px 5px 0;
+        @include mqmax($medium) {
+          top: 0px;
+          left: 0px;
+        }
+      }
+      .post-leadImage {
+        height: 130px;
+        overflow: hidden;
+      }
+      .post-leadImage img {
+        width: auto;
+        height: 100%;
+        max-width: initial;
+      }
+    }
+  }
+}

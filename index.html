@@ -1,24 +1,21 @@
 ---
 layout: default
 bodyClass: home
+hideModule: true
 ---
 <div class="home">
-  <h1 class="page-heading">Articles</h1>
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-          {% if post.leadImage %}
-            <img src="{{ post.leadImage }}" alt="{{ post.leadImageAlt }}">
-          {% endif %}
-          <h2 class="post-title">
-            {{ post.title }}
-          </h2>
-          <span class="post-subtitle">{{ post.subtitle}}</span>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
+
+{% if page.hideModule == true %}
+{% else %}
+  {% include _module/listAllArticles.html %}
+{% endif %}
+
+{% if page.hideModule == false %}
+{% else %}
+  {% comment %}Feature Specific Category & Posts{% endcomment %}
+  {% assign categoryname = "front-end" %}
+  {% include _modules/specificCategoryPosts.html %}
+{% endif %}
+
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 </div>

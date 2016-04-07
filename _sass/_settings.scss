@@ -14,15 +14,19 @@ $grey-color:       #444c5a;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-// Width of the content area
-$content-width:    800px;
-// breakpoints
-$x-small:      320px;
-$small:        400px;
-$medium:       600px;
-$large:        800px;
-$x-large:      1200px;
+//postgroup module
+$postTitle    : #444c5a;
+$postSubtitle : #5D98A6;
 
+// breakpoints
+$x-small:      400px;
+$small:        600px;
+$medium:       800px;
+$large:        960px;
+$x-large:      1200px;
+// Width of the content area
+$content-width:    $large;
+//
 $fontFamilys: (
   "one"     : unquote("'jaf-facitweb', sans-serif"),
   "two"     : unquote("'bookmania', sans-serif")

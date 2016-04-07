@@ -14,6 +14,14 @@ $(document).ready( function() {
   $('{{ site.headingEls }}').each( function() {
     $(this).addClass('{{ site.fontSans }}');
   })
+  // $('.post-group .post-title').succinct({
+  //   size: 45,
+  //   ignore: false
+  // });
+  $('.post-group .post-subtitle').succinct({
+    size: 55,
+    ignore: true
+  });
 })
 $(window).load(function() {
   $("body").removeClass("preload");

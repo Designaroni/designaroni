@@ -1,0 +1,23 @@
+{% if site.categories.[categoryname].size %}
+  <section class="post-group">
+    <h2 class="post-group-title">{{ categoryname }}</h2>
+    <div class="post-item-group">
+    {% for post in site.categories[categoryname] %}
+      <div class="post-item">
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+          {% if post.leadImage %}
+            <div class="post-leadImage">
+              <img src="{{ post.leadImage }}" alt="{{ post.leadImageAlt }}">
+            </div>
+          {% endif %}
+          <h4 class="post-title">
+            {{ post.title }}
+          </h4>
+          <span class="post-subtitle">{{ post.subtitle}}</span>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </a>
+      </div>
+    {% endfor %}
+    </div>
+  </section>
+{% endif %}
