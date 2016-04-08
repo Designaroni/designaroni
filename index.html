@@ -7,7 +7,7 @@ hideModule: true
 
 {% if page.hideModule == true %}
 {% else %}
-  {% include _module/listAllArticles.html %}
+  {% include _modules/listAllArticles.html %}
 {% endif %}
 
 {% if page.hideModule == false %}
@@ -15,6 +15,11 @@ hideModule: true
   {% comment %}Feature Specific Category & Posts{% endcomment %}
   {% assign categoryname = "front-end" %}
   {% include _modules/specificCategoryPosts.html %}
+{% endif %}
+
+{% if page.hideModule == false %}
+{% else %}
+  {% include _modules/loopCategories.html %}
 {% endif %}
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

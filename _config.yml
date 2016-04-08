@@ -23,3 +23,6 @@ clear: '<div class="clear"></div>'
 # Build settings
 markdown: kramdown
 permalink: journal/:title
+# Gems because wut?
+gems:
+  - jekyll-assets

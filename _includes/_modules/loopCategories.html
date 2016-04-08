@@ -1,0 +1,9 @@
+{% comment %}Loop Through All Categories{% endcomment %}
+<section class="post-categories">
+  <h2>All Categories</h2>
+    {% for category in site.categories %}
+      {% assign categoryname = [category | first] %}
+      <a class="post-categories-tag">{{ categoryname }}<span>({{site.categories.[categoryname].size}})</span>
+      </a>
+    {% endfor %}
+</section>
