@@ -20,6 +20,7 @@ fontSans: tk-jaf-facitweb
 fontSerif: tk-bookmania
 headingEls: h1, h2, h3, h4, h5, h6, .site-header
 clear: '<div class="clear"></div>'
+devmode: false
 # Build settings
 markdown: kramdown
 permalink: journal/:title

@@ -1,3 +1,8 @@
+{% if site.devmode %}
+<script src="/js/devmode/jQuery-1.11.0.js"></script>
+<script src="/js/devmode/jQuery.succinct.min.js"></script>
+{% else %}
 <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
 <script src="/js/jQuery.succinct.min.js"></script>
+{% endif %}
 <script src="/js/global.js"></script>

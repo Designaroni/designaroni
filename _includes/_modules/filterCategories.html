@@ -1,0 +1,66 @@
+{% comment %}Loop Through All Categories{% endcomment %}
+<section class="post-categories-filter">
+  <h2>Filter Categories</h2>
+    {% for category in site.categories %}
+      {% assign categoryname = [category | first] %}
+      <a class="post-categories-tag {{ categoryname }}"><span class="visible"></span>{{ categoryname }}<span class="show-all"></span></a>
+    {% endfor %}
+</section>
+{% include _modules/loopPostsDisplayCategories.html %}
+<script>
+var categories = [];
+var visibleCategories = [];
+var notVisibleCategories = [];
+var minus = '- ';
+var plus = '+ ';
+var hasnone = '- 0';
+{% for category in site.categories %}
+  {% assign categoryname = [category | first] %}
+  if ( $('.post-categories-filter-group .{{categoryname}}').length > 0 ) {
+    $('.post-categories-tag.{{ categoryname }}').addClass('selected');
+  }
+  categories.push('{{ categoryname }}');
+{% endfor %}
+whatsVisible()
+$('.post-categories-tag').click( function() {
+  for (var i = 0; i < categories.length; i++) {
+    if ($(this).hasClass(categories[i]) && $(this).hasClass('selected')) {
+      $(this).removeClass('selected')
+      $('.post-categories-filter-group').find('.'+categories[i]).hide();
+    } else if ($(this).hasClass(categories[i]) && !$(this).hasClass('selected')) {
+      $(this).addClass('selected')
+      $('.post-categories-filter-group').find('.'+categories[i]).show();
+    }
+  }
+  whatsVisible();
+});
+function whatsVisible() {
+  visibleCategories = [];
+  notVisibleCategories = [];
+  $('.post-categories-tag span').text(hasnone).parent().removeClass('selected hasMore hasLess');
+  $('.post-categories-filter-group .post-category:visible').each( function() {
+    visibleCategories.push($(this).text());
+  })
+  $('.post-categories-filter-group .post-category:not(:visible)').each( function() {
+    notVisibleCategories.push($(this).text());
+  })
+  visibleCategories.forEach( function(k) {
+    var count = 0;
+    for(var i = 0; i < visibleCategories.length; ++i){
+      if(visibleCategories[i] == k) {
+        count++;
+        $('.post-categories-tag.'+k+' span.visible').text(minus+count).parent().addClass('selected hasLess');
+      }
+    }
+  })
+  notVisibleCategories.forEach( function(k) {
+    var count = 0;
+    for(var i = 0; i < notVisibleCategories.length; ++i){
+      if(notVisibleCategories[i] == k) {
+        count++;
+        $('.post-categories-tag.'+k+' span.show-all').text(plus+count).parent().addClass('hasMore');
+      }
+    }
+  })
+}
+</script>

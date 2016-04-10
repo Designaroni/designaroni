@@ -1,3 +1,13 @@
+/***/
+html {
+  opacity: 0;
+  transition: opacity 100ms;
+  &.wf-active,
+  &.wf-inactive,
+  &.preloaded {
+    opacity: 1;
+  }
+}
 .preload * {
   -webkit-transition: none !important;
   -moz-transition: none !important;
@@ -169,13 +179,4 @@ pre {
             fill: $grey-color;
         }
     }
-}
-/***/
-html {
-  opacity: 0;
-  transition: opacity 100ms;
-  &.wf-active,
-  &.wf-inactive {
-    opacity: 1;
-  }
 }

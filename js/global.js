@@ -24,5 +24,6 @@ $(document).ready( function() {
   });
 })
 $(window).load(function() {
-  $("body").removeClass("preload");
+  $('body').removeClass('preload');
+  $('html').addClass('preloaded');
 });
