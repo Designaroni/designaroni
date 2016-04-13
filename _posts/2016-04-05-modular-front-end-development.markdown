@@ -7,5 +7,4 @@ categories: front-end architecture
 tags: front-end code architecture
 leadImage: /assets/unsplash_vadim_sherbakov_26-9.jpeg
 leadImageAlt: "Modular Front-End Development"
-permalink: /ModularFront-End Development
 ---
