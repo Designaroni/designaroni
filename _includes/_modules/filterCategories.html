@@ -3,7 +3,7 @@
   <h2>Filter Categories</h2>
     {% for category in site.categories %}
       {% assign categoryname = [category | first] %}
-      <a class="post-categories-tag {{ categoryname }}"><span class="visible"></span>{{ categoryname }}<span class="show-all"></span></a>
+      <a class="post-categories-tag {{ categoryname }}"><span class="hide-all"></span>{{ categoryname }}<span class="show-all"></span></a>
     {% endfor %}
 </section>
 {% include _modules/loopPostsDisplayCategories.html %}
@@ -21,19 +21,45 @@ var hasnone = '- 0';
   }
   categories.push('{{ categoryname }}');
 {% endfor %}
-whatsVisible()
-$('.post-categories-tag').click( function() {
+whatsVisible();
+// $(document).on('click','.post-categories-tag', function() {
+//   for (var i = 0; i < categories.length; i++) {
+//     if ($(this).hasClass(categories[i]) && $(this).hasClass('selected')) {
+//       $(this).removeClass('selected')
+//       $('.post-categories-filter-group').find('.'+categories[i]).hide();
+//     } else if ($(this).hasClass(categories[i]) && !$(this).hasClass('selected')) {
+//       $(this).addClass('selected')
+//       $('.post-categories-filter-group').find('.'+categories[i]).show();
+//     }
+//   }
+//   whatsVisible();
+// });
+
+// show-all clicked
+$(document).on('click','.post-categories-tag .show-all', function(e) {
+  console.log('show-all')
   for (var i = 0; i < categories.length; i++) {
-    if ($(this).hasClass(categories[i]) && $(this).hasClass('selected')) {
-      $(this).removeClass('selected')
-      $('.post-categories-filter-group').find('.'+categories[i]).hide();
-    } else if ($(this).hasClass(categories[i]) && !$(this).hasClass('selected')) {
-      $(this).addClass('selected')
+    if ($(this).parent().hasClass(categories[i]) && (!$(this).parent().hasClass('selected') || $(this).parent().hasClass('hasMore'))) {
+      $(this).parent().addClass('selected')
       $('.post-categories-filter-group').find('.'+categories[i]).show();
     }
   }
   whatsVisible();
+  e.stopPropagation();
 });
+// hide-all clicked
+$(document).on('click','.post-categories-tag .hide-all', function(e) {
+  console.log('hide-all')
+  for (var i = 0; i < categories.length; i++) {
+    if ($(this).parent().hasClass(categories[i]) && $(this).parent().hasClass('selected')) {
+      $(this).parent().removeClass('selected')
+      $('.post-categories-filter-group').find('.'+categories[i]).hide();
+    }
+  }
+  whatsVisible();
+  e.stopPropagation();
+});
+
 function whatsVisible() {
   visibleCategories = [];
   notVisibleCategories = [];
@@ -49,7 +75,7 @@ function whatsVisible() {
     for(var i = 0; i < visibleCategories.length; ++i){
       if(visibleCategories[i] == k) {
         count++;
-        $('.post-categories-tag.'+k+' span.visible').text(minus+count).parent().addClass('selected hasLess');
+        $('.post-categories-tag.'+k+' span.hide-all').text(minus+count).parent().addClass('selected hasLess');
       }
     }
   })
