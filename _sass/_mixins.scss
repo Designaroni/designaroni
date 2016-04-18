@@ -8,7 +8,7 @@
   font-style: fontStyle($key);
 }
 @mixin fsi($key, $value) {
-  font-size: $key#{unquote($value)};
+  font-size: unquote("#{$key}#{unquote($value)}");
 }
 @mixin centerWidth($key) {
   width: $key;

@@ -7,6 +7,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Senior Front End Designer @SportNgin - Eternally Minnesotan, Forever Curious… / Web Designer & Front-end Developer / Typographer / Coder / UI / UX /
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://designaroni.com" # the base hostname & protocol for your site
+urlDevMode: "http://0.0.0.0:4000"
 twitter_username: designaroni
 github_username:  designaroni
 hasComments: "#disqus_thread"

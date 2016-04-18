@@ -3,7 +3,7 @@
   {% for post in site.posts %}
     <div class="post-item-group">
           <div class="post-item {% for category in post.categories %}{{ category }} {% endfor %}">
-            <a class="post-link" href="{{ post.url }}" data-proofer-ignore>
+            <a class="post-link" href="{% if site.devmode %} {{ post.url | prepend:site.urlDevMode }}{% else %} {{ post.url | prepend:site.url }} {% endif %}">
               {% if post.leadImage %}
                 <div class="post-leadImage">
                   <img src="{{ post.leadImage }}" alt="{{ post.leadImageAlt }}">
