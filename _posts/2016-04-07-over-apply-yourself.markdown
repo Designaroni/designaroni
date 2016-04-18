@@ -7,6 +7,7 @@ categories: front-end career
 tags: front-end code career
 leadImage: /assets/unsplash_vadim_sherbakov_26-9.jpeg
 leadImageAlt: "Over Apply Yourself"
+published: false
 ---
 - Bring yourself to the table, say I am good enough
 - Apply for positions listing more that you have but not out of reach

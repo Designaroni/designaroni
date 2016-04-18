@@ -7,4 +7,5 @@ categories: front-end sass
 tags: front-end sass scss css tools
 leadImage: /assets/unsplash_vadim_sherbakov_26-9.jpeg
 leadImageAlt: "Building a Sass Project Structure"
+published: false
 ---

@@ -250,3 +250,20 @@
   color: grey;
   font-style: italic;
 }
+h2.post-subtitle {
+    color: slategrey;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 1.5em;
+    display: block;
+    position: relative;
+}
+
+h2.post-subtitle span {
+    position: absolute;
+    font-size: 99px;
+    top: -.33em;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}

@@ -7,4 +7,5 @@ categories: front-end career
 tags: front-end career job-hunting portfolio
 leadImage: /assets/unsplash_vadim_sherbakov_26-9.jpeg
 leadImageAlt: "Applying For A Front-End Job"
+published: false
 ---

@@ -7,4 +7,5 @@ categories: terminal tools
 tags: terminal tools
 leadImage: /assets/unsplash_vadim_sherbakov_26-9.jpeg
 leadImageAlt: "Reloading terminal after updating profile"
+published: false
 ---
