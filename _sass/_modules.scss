@@ -253,7 +253,7 @@
 h2.post-subtitle {
     color: slategrey;
     text-align: center;
-    font-size: 32px;
+    font-size: 4vmax;
     margin-bottom: 1.5em;
     display: block;
     position: relative;
@@ -261,7 +261,7 @@ h2.post-subtitle {
 
 h2.post-subtitle span {
     position: absolute;
-    font-size: 99px;
+    font-size: 10vmax;
     top: -.33em;
     left: 0;
     bottom: 0;
