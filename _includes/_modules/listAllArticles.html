@@ -3,7 +3,7 @@
 <ul class="post-list">
   {% for post in site.posts %}
     <li>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+      <a class="post-link" href="{% if site.devmode %} {{ post.url | prepend:site.urlDevMode }}{% else %} {{ post.url | prepend:site.url }} {% endif %}">
         {% if post.leadImage %}
           <img src="{{ post.leadImage }}" alt="{{ post.leadImageAlt }}">
         {% endif %}
