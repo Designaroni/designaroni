@@ -10,11 +10,6 @@ hideModule: true
   {% include _modules/listAllArticles.html %}
 {% endif %}
 
-{% if page.hideModule == false %}
-{% else %}
-  {% include _modules/filterCategories.html %}
-{% endif %}
-
 {% if page.hideModule == true %}
 {% else %}
   {% comment %}Feature Specific Category & Posts{% endcomment %}

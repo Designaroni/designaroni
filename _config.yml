@@ -1,7 +1,7 @@
 exclude: [vendor]
 include: ['_pages']
 # Site settings
-title: designaroni.github.io
+title: designaroni.com
 email: hello@designaroni.com
 description: > # this means to ignore newlines until "baseurl:"
   Senior Front End Designer @SportNgin - Eternally Minnesotan, Forever Curious… / Web Designer & Front-end Developer / Typographer / Coder / UI / UX /

@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: default
 title: About
 permalink: "/about/"
-profileImage: /assets/ian_roberts_profile.jpg
 bodyClass: about
+profileImage: /assets/ian_roberts_profile.jpg
 ---
 
 <div class="profile">
