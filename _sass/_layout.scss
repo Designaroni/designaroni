@@ -247,11 +247,13 @@
       top:25%;
     }
     @include mqmax($medium) {
-      top:15%;
+      top: 0;
+      height: calc(100vw*(9/26));
     }
   }
   .post-title {
     font-size: 4vmax;
+    color: rgba(255, 255, 255, 0.8);
     @include mqmax($medium) {
       font-size: 3vmax;
     }
@@ -261,10 +263,17 @@
   }
   .post-meta {
     margin: 0;
+    color: rgba(255, 255, 255, 0.8);
   }
   .post-header-innner-wrap {
     display: inline-block;
-    background: rgba(234, 234, 234, 0.88);
+    background: rgba(0,39,59,.2);
+    box-shadow: inset 0px 0px 100px 0px black;
     padding: 15px;
+    @include mqmax($medium) {
+      height: calc(100vw*(9/26));
+      box-sizing: border-box;
+      display: block;
+    }
   }
 }

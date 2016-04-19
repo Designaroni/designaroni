@@ -121,10 +121,16 @@ p {
     font-size: 5vmax;
     line-height: 2em;
     @include mqmax($medium) {
-      line-height: 1em;
+      line-height: 1.25em;
     }
     @include mqmax($small) {
       font-size: 4vmax;
+    }
+  }
+  .post-comments {
+    a,
+    a:visited {
+      color: #F5F5F5;
     }
   }
 }

@@ -257,6 +257,9 @@ h2.post-subtitle {
     margin-bottom: 1.5em;
     display: block;
     position: relative;
+    @include mqmax($medium) {
+      font-size: 3vmax;
+    }
 }
 
 h2.post-subtitle span {
@@ -266,4 +269,7 @@ h2.post-subtitle span {
     left: 0;
     bottom: 0;
     right: 0;
+    @include mqmax($medium) {
+      font-size: 8vmax;
+    }
 }
