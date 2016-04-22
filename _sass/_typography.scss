@@ -37,7 +37,7 @@ html, body {
   @include fsi(20,"px");
 }
 %p {
-  @include fsi(16,"px");
+  @include fsi(18,"px");
   @include fw(two);
   line-height: normal;
   // margin-bottom: auto;
