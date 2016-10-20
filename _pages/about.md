@@ -1,9 +1,12 @@
 ---
 layout: default
 title: About
+showCommentMeta: false
 permalink: "/about/"
 bodyClass: about
-profileImage: /assets/ian_roberts_profile.jpg
+profileImage: /assets/ian_roberts_crop_26_9.jpg
+leadImage: /assets/unsplash_vadim_sherbakov_26-9.jpeg
+leadImageAlt: "Basic Jekyll markdown & syntax"
 ---
 
 <div class="profile">
@@ -11,7 +14,7 @@ profileImage: /assets/ian_roberts_profile.jpg
 </div>
 
 <div class="profileDescription">
-  <p>Senior Front End Developer <a href="http://sportngin.com">@SportNgin</a> - Eternally Minnesotan, Forever Curious…</p>
+  <p>Senior Front End Developer, Team Lead <a href="http://sportsengine.com">@NBCSportsEngine</a> - Eternally Minnesotan, Forever Curious…</p>
   <blockquote>Web Designer & Front-end Developer | Coder | UI | UX</blockquote>
 </div>
 
@@ -24,13 +27,16 @@ profileImage: /assets/ian_roberts_profile.jpg
 <div class="col col-1">
   <ul>
     <li>
-      Senior Front-end Designer <a href="http://sportngin.com">Sport Ngin</a>
+      Senior Front End Developer, Team Lead <a href="http://sportsengine.com">Sports Engine</a>
     </li>
     <li>
-      Front-end Designer <a href="http://sportngin.com">Sport Ngin</a>
+      Senior Front End Developer <a href="http://sportsengine.com">Sports Engine</a>
     </li>
     <li>
-      Interactive Designer <a href="http://sportngin.com">Sport Ngin</a>
+      Front-end Designer <a href="http://sportsengine.com">Sports Engine</a>
+    </li>
+    <li>
+      Interactive Designer <a href="http://sportsengine.com">Sports Engine</a>
     </li>
   </ul>
 </div>

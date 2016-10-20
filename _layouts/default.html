@@ -2,31 +2,35 @@
 <html lang="en">
   {% include head.html %}
   <body class="{{ page.bodyClass }} {{ site.fontSerif }} preload" >
-    {% include header.html %}
-    {% if page.leadImage %}
-      <div class="leadImage" style="height:calc(100vw * (9/26));">
-        <img src="{{ page.leadImage }}" alt="{{ page.leadImageAlt }}" {{ site.fadeImg }} />
-        <header class="post-header {{ site.fadePauseFast }}">
-          <div class="post-header-innner-wrap">
-            <h1 class="post-title {{ site.fontSans }}">{{ page.title }}</h1>
-            <p class="post-meta">
-              {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
-              <span class="post-comments">
-                <a href="{{ post.url | prepend: site.baseurl | append: site.hasComments }}">Comments</a>
-              </span>
-            </p>
-          </div>
-        </header>
+    <div class="wrap">
+      {% include header.html %}
+      {% if page.leadImage %}
+        <div class="leadImage" style="height:calc(100vw * (9/26)); overflow:hidden;">
+          <img src="{{ page.leadImage }}" alt="{{ page.leadImageAlt }}" {{ site.fadeImg }} />
+          <header class="post-header {{ site.fadePauseFast }}">
+            <div class="post-header-innner-wrap">
+              <h1 class="post-title {{ site.fontSans }}">{{ page.title }}</h1>
+              {% if page.showCommentMeta %}
+              <p class="post-meta">
+                {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+                <span class="post-comments">
+                  <a href="{{ post.url | prepend: site.baseurl | append: site.hasComments }}">Comments</a>
+                </span>
+              </p>
+              {% endif %}
+            </div>
+          </header>
+        </div>
+      {% endif %}
+      <div class="page-content {{ site.fadePauseSlow }}">
+        <div class="wrapper">
+          {{ content }}
+        </div>
       </div>
-    {% endif %}
-    <div class="page-content {{ site.fadePauseSlow }}">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+      {% include adOneTextResponsive.html %}
+      {% include footer.html %}
+      {% include commentscount.html %}
+      {% include scripts_footer.html %}
     </div>
-    {% include adOneTextResponsive.html %}
-    {% include footer.html %}
-    {% include commentscount.html %}
-    {% include scripts_footer.html %}
   </body>
 </html>

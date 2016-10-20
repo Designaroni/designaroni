@@ -1,23 +1,6 @@
-.profile {
-  border-radius: 100%;
-  border: 2px solid lightslategray;
-  display: inline-block;
-  overflow: hidden;
-  width: 25%;
-  box-sizing: border-box;
-  float: left;
-  @include mqmax($medium) {
-    width: 30%;
-    float: none;
-    margin: 10px 35%;
-  }
-}
-.profileDescription {
-  float: right;
-  width: 70%;
-  @include mqmax($medium) {
-    width: 100%;
-  }
+.profile img {
+  width: 100%;
+  margin-bottom: 30px;
 }
 .post-list {
   > li {

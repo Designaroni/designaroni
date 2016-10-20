@@ -5,6 +5,7 @@ subtitle: "Writing, Running & Working with Jekyll"
 date:   2015-11-23 00:05:00
 categories: jekyll code
 tags: Jekyll code
+showCommentMeta: true
 leadImage: /assets/unsplash_vadim_sherbakov_26-9.jpeg
 leadImageAlt: "Basic Jekyll markdown & syntax"
 ---
