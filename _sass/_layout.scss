@@ -1,3 +1,14 @@
+//wrap
+body {
+    background: #edf0f2;
+    > .wrap {
+        background: #fbfbfb;
+        max-width: 1200px;
+        width:100%;
+        margin: auto;
+        box-shadow: 0px 5px 5px 2px #e3e4e4;
+    }
+}
 .col {
   float: left;
   width: 50%;
@@ -10,10 +21,17 @@
   }
 }
 .site-header {
-    border-bottom: 2px solid $borderColorOne;
+    position: fixed;
     min-height: 56px;
-    position: relative;
-    background: $navBackgroundColor;
+    max-width: 1200px;
+    width: 100%;
+    z-index: 9;
+    background-color: transparent;
+    transition: background-color 300ms;
+    border: none;
+    .scrolled & {
+      background-color: $navBackgroundColor;
+    }
 }
 .site-title {
     font-size: 26px;
@@ -235,7 +253,9 @@
 
 .leadImage {
   position: relative;
-
+  img {
+    max-width: initial;
+  }
   .post-header {
     position: absolute;
     text-align: center;
