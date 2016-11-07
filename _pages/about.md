@@ -1,12 +1,12 @@
 ---
-layout: default
 title: About
-showCommentMeta: false
 permalink: "/about/"
+layout: default
+showCommentMeta: false
 bodyClass: about
-profileImage: /assets/ian_roberts_crop_26_9.jpg
-leadImage: /assets/unsplash_vadim_sherbakov_26-9.jpeg
-leadImageAlt: "Basic Jekyll markdown & syntax"
+profileImage: "/assets/ian_roberts_crop_26_9.jpg"
+leadImage: "/assets/unsplash_vadim_sherbakov_26-9.jpeg"
+leadImageAlt: Basic Jekyll markdown & syntax
 ---
 
 <div class="profile">

@@ -1,14 +1,18 @@
 ---
-layout: post
 title: Return Localhost As A Sharable IP Adress
+date: 2016-11-07 00:00:00 Z
+categories:
+- terminal
+tags:
+- terminal
+- code
+- automation
+layout: post
 subtitle: return local ip address in terminal for mac
-date: 2016-11-07T00:00:00.000Z
-categories: terminal
-tags: terminal code automation
-leadImage: /assets/unsplash_vadim_sherbakov_26-9.jpeg
+leadImage: "/assets/unsplash_vadim_sherbakov_26-9.jpeg"
 leadImageAlt: return local ip address in terminal for mac
-published: true
 ---
+
 # This is a Test
 
 ```

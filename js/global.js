@@ -1,5 +1,6 @@
 ---
 ---
+
 function fadeImg(el) {
   $(el).delay(100).fadeIn(300);
 }
