@@ -3,9 +3,10 @@ layout: default
 bodyClass: home
 hideModule: true
 showCommentMeta: false
-leadImage: /assets/unsplash_vadim_sherbakov_26-9.jpeg
-leadImageAlt: "Basic Jekyll markdown & syntax"
+leadImage: "/assets/unsplash_vadim_sherbakov_26-9.jpeg"
+leadImageAlt: Basic Jekyll markdown & syntax
 ---
+
 <div class="home">
 
 {% if page.hideModule == false %}
@@ -16,7 +17,7 @@ leadImageAlt: "Basic Jekyll markdown & syntax"
 {% if page.hideModule == true %}
 {% else %}
   {% comment %}Feature Specific Category & Posts{% endcomment %}
-  {% assign categoryname = "front-end" %}
+  {% assign categoryname = "terminal" %}
   {% include _modules/specificCategoryPosts.html %}
 {% endif %}
 

@@ -1,11 +1,11 @@
 ---
-layout: default
 title: Journal
-showCommentMeta: false
 permalink: "/journal/"
+layout: default
+showCommentMeta: false
 bodyClass: journal
-leadImage: /assets/unsplash_vadim_sherbakov_26-9.jpeg
-leadImageAlt: "Basic Jekyll markdown & syntax"
+leadImage: "/assets/unsplash_vadim_sherbakov_26-9.jpeg"
+leadImageAlt: Basic Jekyll markdown & syntax
 ---
 
 {% if page.hideModule == true %}

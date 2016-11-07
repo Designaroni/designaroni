@@ -1,31 +1,41 @@
-exclude: [vendor]
-include: ['_pages']
-# Site settings
+---
 title: designaroni.com
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+exclude:
+- vendor
+include:
+- _pages
 email: hello@designaroni.com
-description: > # this means to ignore newlines until "baseurl:"
-  Senior Front End Designer @SportNgin - Eternally Minnesotan, Forever Curious… / Web Designer & Front-end Developer / Typographer / Coder / UI / UX /
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://designaroni.com" # the base hostname & protocol for your site
-urlDevMode: "http://0.0.0.0:4000"
+description: 'Senior Front End Designer @SportNgin - Eternally Minnesotan, Forever
+  Curious… / Web Designer & Front-end Developer / Typographer / Coder / UI / UX /
+
+'
+baseurl: ''
+url: http://designaroni.com
+urlDevMode: http://0.0.0.0:4000
 twitter_username: designaroni
-github_username:  designaroni
+github_username: designaroni
 hasComments: "#disqus_thread"
 fadeImg: 'onload="fadeImg(this)" style="display: none;"'
 fadeEl: 'onload="fadeEl(this)" style="display: none;"'
 fadePauseFast: fade-in pause-fast
 fadePauseSlow: fade-in pause-slow
-fadeSlow:      fade-in slow
-fadeFast:      fade-in fast
+fadeSlow: fade-in slow
+fadeFast: fade-in fast
 fontSans: tk-jaf-facitweb
 fontSerif: tk-bookmania
 headingEls: h1, h2, h3, h4, h5, h6, .site-header
-clear: '<div class="clear"></div>'
+clear: <div class="clear"></div>
 devmode: false
-# Build settings
 markdown: kramdown
 permalink: journal/:title
-# Gems because wut?
 gems:
   - jekyll-assets
 # settings for Prose.io

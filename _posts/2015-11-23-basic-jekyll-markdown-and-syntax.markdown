@@ -1,14 +1,19 @@
 ---
+title: Basic Jekyll markdown & syntax
+date: 2015-11-23 00:05:00 Z
+categories:
+- jekyll
+- code
+tags:
+- Jekyll
+- code
 layout: post
-title:  "Basic Jekyll markdown & syntax"
-subtitle: "Writing, Running & Working with Jekyll"
-date:   2015-11-23 00:05:00
-categories: jekyll code
-tags: Jekyll code
+subtitle: Writing, Running & Working with Jekyll
 showCommentMeta: true
-leadImage: /assets/unsplash_vadim_sherbakov_26-9.jpeg
-leadImageAlt: "Basic Jekyll markdown & syntax"
+leadImage: "/assets/unsplash_vadim_sherbakov_26-9.jpeg"
+leadImageAlt: Basic Jekyll markdown & syntax
 ---
+
 If you are using the basic Jekyll theme posts can be found in your `_posts` directory. You can edit existing blog posts for the site to see how your changes take affect. Additionally creating a new blog post is as easy as adding a new markdown file within the `_posts` directory.
 
 #### Protip!
