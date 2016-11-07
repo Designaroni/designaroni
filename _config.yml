@@ -37,69 +37,68 @@ devmode: false
 markdown: kramdown
 permalink: journal/:title
 gems:
-  - jekyll-assets
-# settings for Prose.io
+- jekyll-assets
 prose:
-  rooturl: '_posts'
-  siteurl: 'http://designaroni.com'
-  media: 'assets'
-  ignore:
+  rooturl: _posts
+  siteurl: http://designaroni.com
+  media: assets
+  ignore: 
   metadata:
     _posts:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
-      - name: "title"
-        field:
-          element: "text"
-          label: "title"
-      - name: "subtitle"
-        field:
-          element: "text"
-          value: "title"
-      - name: "date"
-        field:
-          element: "text"
-          value: "CURRENT_DATETIME"
-      - name: "categories"
-        field:
-          element: "multiselect"
-          options:
-            - name: 'Front End'
-              value: 'front-end'
-            - name: 'Terminal'
-              value: 'terminal'
-            - name: 'Jekyll'
-              value: 'jekyll'
-            - name: 'Code'
-              value: 'code'
-            - name: 'Career'
-              value: 'career'
-            - name: 'Architecture'
-              value: 'architecture'
-            - name: 'Professional Development'
-              value: 'professional-development'
-            - name: 'Character'
-              value: 'character'
-            - name: 'Tools'
-              value: 'tools'
-            - name: 'Sass'
-              value: 'sass'
-            - name: 'Javascript'
-              value: 'javascript'
-      - name: "leadImage"
-        field:
-          element: "text"
-          label: "This is a label to the user"
-          help: "this is a help to accompany the label"
-          value:
-          placeholder: "/assets/unsplash_vadim_sherbakov_26-9.jpeg"
-      - name: "leadImageAlt"
-        field:
-          element: "text"
-          placeholder: "subtitle"
-      - name: "published"
-        field:
-          element: "checkbox"
-          value: false
+    - name: layout
+      field:
+        element: hidden
+        value: post
+    - name: title
+      field:
+        element: text
+        label: title
+    - name: subtitle
+      field:
+        element: text
+        value: title
+    - name: date
+      field:
+        element: text
+        value: CURRENT_DATETIME
+    - name: categories
+      field:
+        element: multiselect
+        options:
+        - name: Front End
+          value: front-end
+        - name: Terminal
+          value: terminal
+        - name: Jekyll
+          value: jekyll
+        - name: Code
+          value: code
+        - name: Career
+          value: career
+        - name: Architecture
+          value: architecture
+        - name: Professional Development
+          value: professional-development
+        - name: Character
+          value: character
+        - name: Tools
+          value: tools
+        - name: Sass
+          value: sass
+        - name: Javascript
+          value: javascript
+    - name: leadImage
+      field:
+        element: text
+        label: This is a label to the user
+        help: this is a help to accompany the label
+        value: 
+        placeholder: "/assets/unsplash_vadim_sherbakov_26-9.jpeg"
+    - name: leadImageAlt
+      field:
+        element: text
+        placeholder: subtitle
+    - name: published
+      field:
+        element: checkbox
+        value: false
