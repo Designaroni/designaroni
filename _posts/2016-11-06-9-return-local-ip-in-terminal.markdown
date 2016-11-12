@@ -1,18 +1,18 @@
 ---
-layout: post
 title: View Localhost On Devices In Your Network
-date: 'Sun Nov 06 2016 18:00:00 GMT-0600 (CST)'
+date: 2016-11-06 18:00:00 Z
 categories:
-  - terminal
+- terminal
 tags:
-  - terminal
-  - code
-  - automation
+- terminal
+- code
+- automation
+layout: post
 subtitle: How do I connect to this localhost from another computer on the same network?
-leadImage: /assets/unsplash_vadim_sherbakov_26-9.jpeg
-leadImageAlt: How do I connect to this localhost from another computer on the same network?
-published: true
-forwardSlash: /
+leadImage: "/assets/unsplash_vadim_sherbakov_26-9.jpeg"
+leadImageAlt: How do I connect to this localhost from another computer on the same
+  network?
+forwardSlash: "/"
 ---
 
 # Quick tip of the day
