@@ -1,17 +1,18 @@
 ---
-title: View Localhost On Devices In Your Network
-date: 2016-11-06 12:00:00 Z
-categories:
-- terminal
-tags:
-- terminal
-- code
-- automation
 layout: post
+title: View Localhost On Devices In Your Network
+date: 'Sun Nov 06 2016 12:00:00 GMT-0600 (CST)'
+categories:
+  - terminal
+tags:
+  - terminal
+  - code
+  - automation
 subtitle: Connect To Localhost Within Your Network
-leadImage: "/assets/View_Localhost_On_Devices_In_Your_Network_26-9.jpg"
+leadImage: /assets/View_Localhost_On_Devices_In_Your_Network_26-9.jpg
 leadImageAlt: Connect To Localhost Within Your Network
-forwardSlash: "/"
+forwardSlash: /
+published: true
 ---
 
 # Quick tip of the day
