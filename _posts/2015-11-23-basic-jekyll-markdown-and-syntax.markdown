@@ -10,7 +10,7 @@ tags:
 layout: post
 subtitle: Writing, Running & Working with Jekyll
 showCommentMeta: true
-leadImage: "/assets/unsplash_vadim_sherbakov_26-9.jpeg"
+leadImage: "/assets/unsplash_vadim_sherbakov_26_9.jpg"
 leadImageAlt: Basic Jekyll markdown & syntax
 ---
 

@@ -9,7 +9,7 @@ tags:
 - automation
 layout: post
 subtitle: Connect To Localhost Within Your Network
-leadImage: "/assets/View_Localhost_On_Devices_In_Your_Network_26-9.jpg"
+leadImage: "/assets/View_Localhost_On_Devices_In_Your_Network_26_9.jpg"
 leadImageAlt: Connect To Localhost Within Your Network
 forwardSlash: "/"
 ---
