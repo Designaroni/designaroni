@@ -4,7 +4,7 @@ permalink: "/journal/"
 layout: default
 showCommentMeta: false
 bodyClass: journal
-leadImage: "/assets/unsplash_vadim_sherbakov_26-9.jpeg"
+leadImage: "/assets/field_notes_26_9.jpg"
 leadImageAlt: Basic Jekyll markdown & syntax
 ---
 

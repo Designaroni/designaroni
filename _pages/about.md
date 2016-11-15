@@ -5,7 +5,7 @@ layout: default
 showCommentMeta: false
 bodyClass: about
 profileImage: "/assets/ian_roberts_crop_26_9.jpg"
-leadImage: "/assets/unsplash_vadim_sherbakov_26-9.jpeg"
+leadImage: "/assets/drumset_26_9.jpg"
 leadImageAlt: Basic Jekyll markdown & syntax
 ---
 
