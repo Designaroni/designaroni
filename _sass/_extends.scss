@@ -13,3 +13,10 @@
 .clear {
   @extend %clearfix;
 }
+%center {
+  text-align: center;
+  display: block;
+}
+.center {
+  @extend %center;
+}
