@@ -13,10 +13,7 @@ exclude:
 include:
 - _pages
 email: hello@designaroni.com
-description: 'Senior Front End Developer, Team Lead @SportsEngine - Eternally Minnesotan, Forever
-  Curious… / Web Designer & Front-end Developer / Typographer / Coder / UI / UX
-
-'
+description: 'Senior Front End Developer, Team Lead @SportsEngine - Eternally Minnesotan, Forever Curious… Web Designer & Front-end Web Developer | Coder | UI | UX'
 baseurl: ''
 url: http://designaroni.com
 urlDevMode: http://0.0.0.0:4000
