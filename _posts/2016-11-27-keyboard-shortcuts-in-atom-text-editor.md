@@ -1,17 +1,16 @@
 ---
-layout: post
 title: Keyboard Shortcuts In The Atom Text Editor
-date: 'Sun Nov 27 2016 08:53:00 GMT-0600 (CST)'
+date: 2016-11-27 08:53:00 Z
 categories:
-  - front-end
-  - tools
+- front-end
+- tools
 tags:
-  - Front-End
-  - Tools
+- Front-End
+- Tools
+layout: post
 subtitle: My Top 10 Atom Keyboard Shortcuts
 leadImageAlt: My Top 10 Atom Keyboard Shortcuts
-leadImage: /assets/Keyboard_Shortcuts_Atom_Text_Editor_26_9.jpg
-published: true
+leadImage: "/assets/Keyboard_Shortcuts_Atom_Text_Editor_26_9.jpg"
 ---
 
 > Front End Pro Tip:
