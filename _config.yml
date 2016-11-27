@@ -13,7 +13,8 @@ exclude:
 include:
 - _pages
 email: hello@designaroni.com
-description: 'Senior Front End Developer, Team Lead @SportsEngine - Eternally Minnesotan, Forever Curious… Web Designer & Front-end Web Developer | Coder | UI | UX'
+description: Senior Front End Developer, Team Lead @SportsEngine - Eternally Minnesotan,
+  Forever Curious… Web Designer & Front-end Web Developer | Coder | UI | UX
 baseurl: ''
 url: http://designaroni.com
 urlDevMode: http://0.0.0.0:4000
@@ -43,7 +44,7 @@ prose:
   rooturl: _posts
   siteurl: http://designaroni.com
   media: assets
-  ignore:
+  ignore: 
   metadata:
     _posts:
     - name: layout
@@ -93,7 +94,7 @@ prose:
         element: text
         label: This is a label to the user
         help: this is a help to accompany the label
-        value:
+        value: 
         placeholder: "/assets/unsplash_vadim_sherbakov_26-9.jpeg"
     - name: leadImageAlt
       field:
