@@ -1,16 +1,17 @@
 ---
-title: Keyboard Shortcuts In Atom Text Editor
-date: 2016-11-27 14:53:00 Z
-categories:
-- front-end
-- tools
-tags:
-- Front-End
-- Tools
 layout: post
+title: Keyboard Shortcuts In The Atom Text Editor
+date: 'Sun Nov 27 2016 08:53:00 GMT-0600 (CST)'
+categories:
+  - front-end
+  - tools
+tags:
+  - Front-End
+  - Tools
 subtitle: My Top 10 Atom Keyboard Shortcuts
 leadImageAlt: My Top 10 Atom Keyboard Shortcuts
-leadImage: "/assets/Keyboard_Shortcuts_Atom_Text_Editor_26_9.jpg"
+leadImage: /assets/Keyboard_Shortcuts_Atom_Text_Editor_26_9.jpg
+published: true
 ---
 
 > Front End Pro Tip:
@@ -129,4 +130,3 @@ Open the command pallete to quick search for settings for packages, themes, keyb
 {{site.center}}
 ![Atom Keyboard Shortcut Open Command Pallet]({{site.baseurl}}/assets/Atom-keyboard-shortcut-command-pallete-Nov-27-2016 12-33-51.gif)
 {{site.endSpan}}
-
