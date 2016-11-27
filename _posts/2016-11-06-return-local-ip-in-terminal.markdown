@@ -32,6 +32,8 @@ I use `zsh` for my shell and have this housed in my `~{{site.forwardSlash}}.zshr
 
 Now you can run `localIp` and you should see something like this.
 
+{{site.center}}
 ![Return Localhost Broadcast IP Address]({{site.baseurl}}/assets/local-ip-Nov-11-2016 16-14-06.gif)
+{{site.endSpan}}
 
 Lastly to run localhost on other devices load up the returned Ip address on your browser and optionally append the port or path you were working with before.
