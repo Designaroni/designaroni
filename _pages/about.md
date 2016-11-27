@@ -14,8 +14,8 @@ leadImageAlt: Basic Jekyll markdown & syntax
 </div>
 
 <div class="profileDescription">
-  <p>Senior Front End Developer, Team Lead <a href="http://sportsengine.com">@NBCSportsEngine</a> - Eternally Minnesotan, Forever Curious…</p>
-  <blockquote>Web Designer & Front-end Developer | Coder | UI | UX</blockquote>
+  <p>Senior Front End Developer, Team Lead <a href="http://sportsengine.com">@SportsEngine</a> - Eternally Minnesotan, Forever Curious…</p>
+  <blockquote>Web Designer & Front-end Web Developer | Coder | UI | UX</blockquote>
 </div>
 
 {{ site.clear }}
@@ -62,7 +62,7 @@ leadImageAlt: Basic Jekyll markdown & syntax
     <li>USA Hockey</li>
     <li>Hockey Canada</li>
     <li>Labatt Brewing Company</li>
-    <li>Sportngin.com</li>
+    <li>Sportsengine.com</li>
     <li>Minnesota Wild</li>
     <li>Best Buy</li>
   </ul>
