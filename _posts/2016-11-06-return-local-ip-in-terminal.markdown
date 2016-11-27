@@ -1,6 +1,6 @@
 ---
 title: View Localhost On Devices In Your Network
-date: 2016-11-06 12:00:00 Z
+date: 2016-11-06 06:00:00 Z
 categories:
 - terminal
 tags:
@@ -14,7 +14,9 @@ leadImageAlt: Connect To Localhost Within Your Network
 forwardSlash: "/"
 ---
 
-# Quick tip of the day
+> Front End Pro Tip:
+
+# View Localhost On Devices In Your Network
 
 Often when I am working on `localhost` I want to test my work on other devices within my network. I typically would run `ifconfig` in the __terminal__ and peer through the lines of returned text for the the word `broadcast` then use the IP address from that line. Wanting an easier solution I put together the following shell script.
 

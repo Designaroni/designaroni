@@ -34,7 +34,7 @@ fontSerif: tk-bookmania
 headingEls: h1, h2, h3, h4, h5, h6, .site-header
 clear: <div class="clear"></div>
 center: <span class="center">
-endDiv: </span>
+endDiv: "</span>"
 devmode: false
 forwardSlash: "/"
 singleQuote: "'"
@@ -42,7 +42,6 @@ markdown: kramdown
 permalink: journal/:title
 gems:
 - jekyll-assets
-#setups for prose
 prose:
   rooturl: _posts
   siteurl: http://designaroni.com
