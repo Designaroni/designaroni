@@ -21,7 +21,7 @@
   -moz-animation-delay: 0.3s;
   animation-delay: 0.3s;
 
-  &.fast {
+  &.fast-pause-fast-fade {
     -webkit-animation-duration:.2s;
     -moz-animation-duration:.2s;
     animation-duration:.2s;
@@ -30,7 +30,7 @@
     -moz-animation-delay: 0.1s;
     animation-delay: 0.1s;
   }
-  &.pause-fast {
+  &.slow-pause-fast-fade {
     -webkit-animation-duration:.2s;
     -moz-animation-duration:.2s;
     animation-duration:.2s;
@@ -39,7 +39,16 @@
     -moz-animation-delay: 0.5s;
     animation-delay: 0.5s;
   }
-  &.slow {
+  &.fast-pause-slow-fade {
+    -webkit-animation-duration:.3s;
+    -moz-animation-duration:.3s;
+    animation-duration:.3s;
+
+    -webkit-animation-delay: 0.1s;
+    -moz-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+  }
+  &.mid-slow-mid-fade {
     -webkit-animation-duration:.3s;
     -moz-animation-duration:.3s;
     animation-duration:.3s;
@@ -48,7 +57,7 @@
     -moz-animation-delay: 0.3s;
     animation-delay: 0.3s;
   }
-  &.pause-slow {
+  &.slow-pause-slow-fade {
     -webkit-animation-duration:.3s;
     -moz-animation-duration:.3s;
     animation-duration:.3s;

@@ -5,9 +5,9 @@
     <div class="wrap">
       {% include header.html %}
       {% if page.leadImage %}
-        <div class="leadImage" style="height:calc(100vw * (9/26)); overflow:hidden;">
+        <div class="leadImage">
           <img src="{{ page.leadImage }}" alt="{{ page.leadImageAlt }}" {{ site.fadeImg }} />
-          <header class="post-header {{ site.fadePauseFast }}">
+          <header class="post-header {{ site.fadeFastPauseSlowFade }}">
             <div class="post-header-innner-wrap">
               <h1 class="post-title {{ site.fontSans }}">{{ page.title }}</h1>
               {% if page.showCommentMeta %}

@@ -13,8 +13,7 @@ exclude:
 include:
 - _pages
 email: hello@designaroni.com
-description: Senior Front End Developer, Team Lead @SportsEngine - Eternally Minnesotan,
-  Forever Curious… Web Designer & Front-end Web Developer | Coder | UI | UX
+description: Senior Front End Developer, Team Lead for the Creative team @SportsEngine. Building custom web solutions for sport organizations, dealing with corporate branding, delivering marketing campaigns for the needy & obsessively improving Front End tooling, build processes & the like… all for the love of sport & code. - Eternally Minnesotan, Forever Curious… Web Designer & Front End Web Developer | Coder | UI | UX
 baseurl: ''
 url: http://designaroni.com
 urlDevMode: http://0.0.0.0:4000
@@ -23,17 +22,20 @@ github_username: designaroni
 hasComments: "#disqus_thread"
 fadeImg: 'onload="fadeImg(this)" style="display: none;"'
 fadeEl: 'onload="fadeEl(this)" style="display: none;"'
-fadePauseFast: fade-in pause-fast
-fadePauseSlow: fade-in pause-slow
-fadeSlow: fade-in slow
-fadeFast: fade-in fast
+fadeSlowPauseFastFade: fade-in slow-pause-fast-fade
+fadeSlowPauseSlowFade: fade-in slow-pause-slow-fade
+fadeFastPauseSlowFade: fade-in fast-pause-slow-fade
+fadeMidSlowMidFade: fade-in mid-slow-mid-fade
+fadeFastPauseFastFade: fade-in fast-pause-fast-fade
+fade: fade-in
 fontSans: tk-jaf-facitweb
 fontSerif: tk-bookmania
 headingEls: h1, h2, h3, h4, h5, h6, .site-header
 clear: <div class="clear"></div>
 center: <span class="center">
 endDiv: "</span>"
-devmode: false
+listAllArticlesPostLinkWidth: 900px
+devmode: true
 forwardSlash: "/"
 singleQuote: "'"
 markdown: kramdown
@@ -44,7 +46,7 @@ prose:
   rooturl: _posts
   siteurl: http://designaroni.com
   media: assets
-  ignore: 
+  ignore:
   metadata:
     _posts:
     - name: layout
@@ -94,7 +96,7 @@ prose:
         element: text
         label: This is a label to the user
         help: this is a help to accompany the label
-        value: 
+        value:
         placeholder: "/assets/unsplash_vadim_sherbakov_26-9.jpeg"
     - name: leadImageAlt
       field:

@@ -23,12 +23,14 @@ body {
 .site-header {
     position: fixed;
     min-height: 56px;
-    max-width: 1200px;
-    width: 100%;
+    width: 100vw;
+    left: 0;
     z-index: 9;
     background-color: transparent;
     transition: background-color 300ms;
     border: none;
+    padding: 0 0 0 20px;
+    box-sizing: border-box;
     .scrolled & {
       background-color: $navBackgroundColor;
     }
@@ -208,8 +210,14 @@ body {
 
 .leadImage {
   position: relative;
+  overflow: hidden;
+  height: calc(100vw / (26/9));
+  width: 100vw;
+  left: calc(-1*(100vw - 100%) / 2);
   img {
     max-width: initial;
+    width: 100%;
+    height: auto;
   }
   .post-header {
     position: absolute;
@@ -219,7 +227,7 @@ body {
     right: 0;
     top: 0;
     background: rgba(0,39,59,.2);
-    box-shadow: inset 0px 0px 100px 0px black;
+    //box-shadow: inset 0px 0px 100px 0px black;
     padding: 15px;
     height: calc(100vw*(9/26));
     box-sizing: border-box;

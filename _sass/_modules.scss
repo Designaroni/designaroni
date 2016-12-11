@@ -23,6 +23,9 @@
     }
     .post-link {
       display: block;
+      @include mqmax($large) {
+        max-height: calc((100vw - 30px) * (9/26));
+      }
     }
   }
 }
