@@ -3,7 +3,7 @@
 <ul class="post-list">
   {% for post in site.posts %}
     <li>
-      <a class="post-link" href="{% if site.devmode %}{{ post.url | prepend:site.urlDevMode }}{% else %}{{ post.url | prepend:site.url }}{% endif %}" data-proofer-ignore style="background:#b9b9b9 url('{{ post.leadImage }}') no-repeat center center;background-blend-mode:multiply;width:100%;height:calc({{ site.listAllArticlesPostLinkWidth }}*(9/26));">
+      <a class="post-link" href="{% if site.devmode %}{{ post.url | prepend:site.urlDevMode }}{% else %}{{ post.url | prepend:site.url }}{% endif %}" data-href="{{ post.url }}" style="background:#b9b9b9 url('{{ post.leadImage }}') no-repeat center center;background-blend-mode:multiply;width:100%;height:calc({{ site.listAllArticlesPostLinkWidth }}*(9/26));">
         <!-- {% if post.leadImage %}
           <img src="{{ post.leadImage }}" alt="{{ post.leadImageAlt }}">
         {% endif %} -->
