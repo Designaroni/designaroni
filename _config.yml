@@ -35,7 +35,7 @@ clear: <div class="clear"></div>
 center: <span class="center">
 endDiv: "</span>"
 listAllArticlesPostLinkWidth: 900px
-devmode: true
+devmode: false
 forwardSlash: "/"
 singleQuote: "'"
 markdown: kramdown
