@@ -1,6 +1,6 @@
 ---
 title: Verify authenticity of files & packages with shasum & openssl
-date: 2017-1-30
+date: 2017-1-30 08:53:00 Z
 categories:
 - tools
 - terminal
@@ -10,8 +10,10 @@ tags:
 layout: post
 subtitle: shasum, openssl & sha1, sha256, md5 hashes
 leadImageAlt: shasum, openssl & sha1, sha256, md5 hashes
-leadImage: "/assets/Verify_authenticity_of_files_with_shasum_openssl_26_9.jpg" 
+leadImage: "/assets/Verify_authenticity_of_files_with_shasum_openssl_26_9.jpg"
 ---
+
+
 > Front End Pro Tip: This is going to be a multipart series on privacy, security, encryption & cryptography  
 
 
@@ -59,7 +61,7 @@ Reading the `man` file for `shasum` allows you to see what additonal options & c
 ```
 
 
-`shasum` documentation further states: 
+`shasum` documentation further states:
 
 
 > "When verifying SHA-512/224 or SHA-512/256 checksums, indicate the  algorithm explicitly using the -a option, e.g."
@@ -109,7 +111,7 @@ I recently downloaded qBittorent for Mac. On issues associated with filesharing 
 
 ```
 $ openssl md5 ~/path/to/file/qbittorrent-3.3.10.dmg
-> MD5(/path/to/file/qbittorrent-3.3.10.dmg)= 22043ac3716b6a08aed5841d4f0a0a4c 
+> MD5(/path/to/file/qbittorrent-3.3.10.dmg)= 22043ac3716b6a08aed5841d4f0a0a4c
 ```
 
 
@@ -134,5 +136,3 @@ $ openssl dgst -sha256 ~/path/to/file/qbittorrent-3.3.10.dmg
 
 
 Additional tools are available to veryfy the integrity of files & packages. Some as simple as `$ md5` though may not be as robust as `shasum` or `openssl`
-
-
