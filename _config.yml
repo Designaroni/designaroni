@@ -42,6 +42,7 @@ markdown: kramdown
 permalink: journal/:title
 gems:
 - jekyll-assets
+- jekyll-feed
 prose:
   rooturl: _posts
   siteurl: http://designaroni.com
