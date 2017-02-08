@@ -1,6 +1,6 @@
 ---
 title: Verify authenticity of files & packages with shasum & openssl
-date: 2017-1-30 08:53:00 Z
+date: 2017-01-30 08:53:00 Z
 categories:
 - tools
 - terminal
@@ -12,7 +12,6 @@ subtitle: shasum, openssl & sha1, sha256, md5 hashes
 leadImageAlt: shasum, openssl & sha1, sha256, md5 hashes
 leadImage: "/assets/Verify_authenticity_of_files_with_shasum_openssl_26_9.jpg"
 ---
-
 
 > Front End Pro Tip: This is going to be a multipart series on privacy, security, encryption & cryptography  
 
