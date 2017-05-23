@@ -34,13 +34,14 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  width: 100%;
   &:before {
     content: '';
     height: 1px;
     width: 100%;
-    top: calc(37px / 2);
+    margin-top: calc(37px / 2);
     background: darkslategray;
-    position: absolute;
+    position: relative;
     border-bottom: 1px solid #eee;
   }
   .post-group-title {
@@ -57,29 +58,18 @@
     border-left-width: 3px;
   }
   .post-item-group {
-    display: flex;
-    max-width: 100%;
-    flex-wrap: wrap;
+    width:50%;
+    @include mqmax($medium) {
+      width: 100%;
+    }
     .post-item {
       padding: 10px 5px;
       flex:1 0 calc(25% - 10px);
       min-width: calc(25% - 10px);
       position: relative;
-      @include mqmax($content-width) {
-        flex: 1 0 calc(50% - 10px);
-        max-width: calc(50% - 10px);
-        min-width: initial;
-      }
-      @include mqmax($medium) {
-        max-width: initial;
-      }
-      @include mqmax(430px) {
-        min-width: 100%;
-      }
       .post-link {
         display: block;
         @include mqmax($medium) {
-          width: calc(130px * (26/9));
           margin: auto;
           position: relative;
         }
@@ -123,13 +113,11 @@
         }
       }
       .post-leadImage {
-        height: 130px;
         overflow: hidden;
       }
       .post-leadImage img {
-        width: auto;
-        height: 100%;
-        max-width: initial;
+        height: auto;
+        width: 100%;
       }
     }
   }
