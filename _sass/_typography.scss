@@ -121,16 +121,32 @@ p {
     font-size: 5vmax;
     line-height: 2em;
     @include mqmax($medium) {
+      font-size: 4vmax;
       line-height: 1.25em;
     }
     @include mqmax($small) {
-      font-size: 4vmax;
+      font-size: 3vmax;
     }
   }
   .post-comments {
     a,
     a:visited {
       color: #F5F5F5;
+    }
+  }
+  @include mqmax($x-small) {
+    overflow: initial;
+    height: initial;
+    .post-header {
+      position: relative;
+      height: initial;
+      background: darkslategray;
+    }
+    .post-header-innner-wrap {
+      position: relative;
+      bottom: initial;
+      width: initial;
+      margin: initial;
     }
   }
 }
