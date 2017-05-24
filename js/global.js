@@ -1,9 +1,6 @@
 ---
 ---
 
-function fadeImg(el) {
-  $(el).delay(100).fadeIn(300);
-}
 function scrollCheck() {
   //console.log($(document).scrollTop())
   if ($(document).scrollTop() >= 50) {

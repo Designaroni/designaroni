@@ -24,8 +24,6 @@ urlDevMode: http://0.0.0.0:4000
 twitter_username: designaroni
 github_username: designaroni
 hasComments: "#disqus_thread"
-fadeImg: 'onload="fadeImg(this)" style="display: none;"'
-fadeEl: 'onload="fadeEl(this)" style="display: none;"'
 fadeSlowPauseFastFade: fade-in slow-pause-fast-fade
 fadeSlowPauseSlowFade: fade-in slow-pause-slow-fade
 fadeFastPauseSlowFade: fade-in fast-pause-slow-fade
@@ -47,11 +45,12 @@ permalink: journal/:title
 gems:
 - jekyll-assets
 - jekyll-feed
+- jekyll-sitemap
 prose:
   rooturl: _posts
   siteurl: http://designaroni.com
   media: assets
-  ignore: 
+  ignore:
   metadata:
     _posts:
     - name: layout
@@ -101,7 +100,7 @@ prose:
         element: text
         label: This is a label to the user
         help: this is a help to accompany the label
-        value: 
+        value:
         placeholder: "/assets/unsplash_vadim_sherbakov_26-9.jpeg"
     - name: leadImageAlt
       field:
