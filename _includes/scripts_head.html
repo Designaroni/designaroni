@@ -5,4 +5,124 @@
 <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
 <script src="/js/jQuery.succinct.min.js"></script>
 {% endif %}
+<!--  hamburger js -->
+<script>
+  var $desktopBreakpoint = 1024;
+  $(document).ready( function() {
+    $(document).on('click', '.hamburger', function(){
+      $(document).trigger('hamburgerToggleClicked');
+    })
+    formatMenu()
+    $(window).resize(formatMenu)
+    $(document).on('hamburgerToggleClicked', function() {
+      if ($('html.navOpen').length == 0) {
+        //initial adjustments for open navigation
+
+        $('.hamburger').addClass('is-active');
+        $('html').addClass('navOpen');
+      } else {
+        //initial adjustments for closed navigation
+
+        //console.log('closing navOpen')
+        $('.hamburger').removeClass('is-active');
+        $('html').removeClass('navOpen')
+      }
+    })
+    function formatMenu() {
+      var currentWidth = window.innerWidth;
+      var isDesktopWidth = currentWidth > $desktopBreakpoint;
+      var isMobileWidth = currentWidth < $desktopBreakpoint;
+      if (isDesktopWidth) {formatForDesktop()}
+      if (isMobileWidth) {formatForMobile()}
+    }
+    function formatForMobile() {
+      //format for mobile makes adjustments for mobile & calls mobileMenue to run constants
+      mobileMenu();
+    }
+    function formatForDesktop() {
+      //format for desktop makes adjustments for desktop & calls desktopMenu to run constants
+      desktopMenu();
+    }
+    function mobileMenu() {
+      // mobileMenu runs additonal js that is beyond the initial formatting
+    }
+    function desktopMenu() {
+      // mobileMenu runs additonal js that is beyond the initial formatting
+
+      $('.hamburger').removeClass('is-active');
+      $('html').removeClass('navOpen');
+    }
+  })
+</script>
+<!-- filter categories scripts -->
+<script>
+var categories = [];
+var visibleCategories = [];
+var notVisibleCategories = [];
+var minus = '- ';
+var plus = '+ ';
+var hasnone = '- 0';
+{% for category in site.categories %}
+  {% assign categoryname = [category | first] %}
+  if ( $('.post-categories-filter-group .{{categoryname}}').length > 0 ) {
+    $('.post-categories-tag.{{ categoryname }}').addClass('selected');
+  }
+  categories.push('{{ categoryname }}');
+{% endfor %}
+whatsVisible();
+// show-all clicked
+$(document).on('click','.post-categories-tag .show-all', function(e) {
+  console.log('show-all')
+  for (var i = 0; i < categories.length; i++) {
+    if ($(this).parent().hasClass(categories[i]) && (!$(this).parent().hasClass('selected') || $(this).parent().hasClass('hasMore'))) {
+      $(this).parent().addClass('selected')
+      $('.post-categories-filter-group').find('.'+categories[i]).show();
+    }
+  }
+  whatsVisible();
+  e.stopPropagation();
+});
+// hide-all clicked
+$(document).on('click','.post-categories-tag .hide-all', function(e) {
+  console.log('hide-all')
+  for (var i = 0; i < categories.length; i++) {
+    if ($(this).parent().hasClass(categories[i]) && $(this).parent().hasClass('selected')) {
+      $(this).parent().removeClass('selected')
+      $('.post-categories-filter-group').find('.'+categories[i]).hide();
+    }
+  }
+  whatsVisible();
+  e.stopPropagation();
+});
+
+function whatsVisible() {
+  visibleCategories = [];
+  notVisibleCategories = [];
+  $('.post-categories-tag span').text(hasnone).parent().removeClass('selected hasMore hasLess');
+  $('.post-categories-filter-group .post-category:visible').each( function() {
+    visibleCategories.push($(this).text());
+  })
+  $('.post-categories-filter-group .post-category:not(:visible)').each( function() {
+    notVisibleCategories.push($(this).text());
+  })
+  visibleCategories.forEach( function(k) {
+    var count = 0;
+    for(var i = 0; i < visibleCategories.length; ++i){
+      if(visibleCategories[i] == k) {
+        count++;
+        $('.post-categories-tag.'+k+' span.hide-all').text(minus+count).parent().addClass('selected hasLess');
+      }
+    }
+  })
+  notVisibleCategories.forEach( function(k) {
+    var count = 0;
+    for(var i = 0; i < notVisibleCategories.length; ++i){
+      if(notVisibleCategories[i] == k) {
+        count++;
+        $('.post-categories-tag.'+k+' span.show-all').text(plus+count).parent().addClass('hasMore');
+      }
+    }
+  })
+}
+</script>
 <script src="/js/global.js"></script>

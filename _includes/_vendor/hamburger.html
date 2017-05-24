@@ -3,54 +3,6 @@
     <span class="hamburger-inner"></span>
   </span>
 </button>
-<script>
-  var $desktopBreakpoint = 1024;
-  $(document).ready( function() {
-    $(document).on('click', '.hamburger', function(){
-      $(document).trigger('hamburgerToggleClicked');
-    })
-    formatMenu()
-    $(window).resize(formatMenu)
-    $(document).on('hamburgerToggleClicked', function() {
-      if ($('html.navOpen').length == 0) {
-        //initial adjustments for open navigation
-
-        $('.hamburger').addClass('is-active');
-        $('html').addClass('navOpen');
-      } else {
-        //initial adjustments for closed navigation
-
-        //console.log('closing navOpen')
-        $('.hamburger').removeClass('is-active');
-        $('html').removeClass('navOpen')
-      }
-    })
-    function formatMenu() {
-      var currentWidth = window.innerWidth;
-      var isDesktopWidth = currentWidth > $desktopBreakpoint;
-      var isMobileWidth = currentWidth < $desktopBreakpoint;
-      if (isDesktopWidth) {formatForDesktop()}
-      if (isMobileWidth) {formatForMobile()}
-    }
-    function formatForMobile() {
-      //format for mobile makes adjustments for mobile & calls mobileMenue to run constants
-      mobileMenu();
-    }
-    function formatForDesktop() {
-      //format for desktop makes adjustments for desktop & calls desktopMenu to run constants
-      desktopMenu();
-    }
-    function mobileMenu() {
-      // mobileMenu runs additonal js that is beyond the initial formatting
-    }
-    function desktopMenu() {
-      // mobileMenu runs additonal js that is beyond the initial formatting
-
-      $('.hamburger').removeClass('is-active');
-      $('html').removeClass('navOpen');
-    }
-  })
-</script>
 <style>
 /*!
  * Hamburgers

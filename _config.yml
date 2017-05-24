@@ -24,8 +24,6 @@ urlDevMode: http://0.0.0.0:4000
 twitter_username: designaroni
 github_username: designaroni
 hasComments: "#disqus_thread"
-fadeImg: 'onload="fadeImg(this)" style="display: none;"'
-fadeEl: 'onload="fadeEl(this)" style="display: none;"'
 fadeSlowPauseFastFade: fade-in slow-pause-fast-fade
 fadeSlowPauseSlowFade: fade-in slow-pause-slow-fade
 fadeFastPauseSlowFade: fade-in fast-pause-slow-fade
