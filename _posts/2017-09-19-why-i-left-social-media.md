@@ -1,17 +1,17 @@
 ---
 title: Why I've Left Social Media
-date: 2017-09-19 00:00:00 Z
+date: 2017-09-19
+published: true
 categories:
 - professional-development
 - character
 tags:
 - professional-development
 - character
-- the-whoohoo-space-cadet
 layout: post
-subtitle: 
+subtitle:
 leadImageAlt: Why I've left social media
-leadImage: "/assets/why_i_left_social_media_26_9.jpg"
+leadImage: "/assets/why_I_left_social_media_26_9.jpg"
 ---
 
 ### Creating Distance From The Race.
