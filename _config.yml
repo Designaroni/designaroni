@@ -1,4 +1,5 @@
 ---
+name: Ian Roberts
 title: designaroni.com
 timezone: UTC
 collections:
@@ -13,11 +14,12 @@ exclude:
 include:
 - _pages
 email: hello@designaroni.com
-description: Senior Front End Developer, Team Lead for the Creative team @SportsEngine.
-  Building custom web solutions for sport organizations, dealing with corporate branding,
-  delivering marketing campaigns for the needy & obsessively improving Front End tooling,
-  build processes & the like… all for the love of sport & code. - Eternally Minnesotan,
-  Forever Curious… Web Designer & Front End Web Developer | Coder | UI | UX
+description: Ian Roberts is a Senior Front End Web Developer & Graphic Designer.
+  Often building custom web solutions for large & small businesses.
+  Working on branding & business strategy projects.
+  Delivering marketing campaigns, email, landing page design & development
+  Obsessively improving Front End tooling & build processes - Eternally Minnesotan,
+  Forever Curious…
 baseurl: ''
 url: http://designaroni.com
 urlDevMode: http://0.0.0.0:4000
@@ -50,7 +52,7 @@ prose:
   rooturl: _posts
   siteurl: http://designaroni.com
   media: assets
-  ignore: 
+  ignore:
   metadata:
     _posts:
     - name: layout
@@ -100,7 +102,7 @@ prose:
         element: text
         label: This is a label to the user
         help: this is a help to accompany the label
-        value: 
+        value:
         placeholder: "/assets/unsplash_vadim_sherbakov_26-9.jpeg"
     - name: leadImageAlt
       field:
