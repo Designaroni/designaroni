@@ -1,7 +1,6 @@
 ---
 title: Why I've Left Social Media
-date: 2017-09-19
-published: true
+date: 2017-09-19 00:00:00 Z
 categories:
 - professional-development
 - character
@@ -9,7 +8,7 @@ tags:
 - professional-development
 - character
 layout: post
-subtitle:
+subtitle: 
 leadImageAlt: Why I've left social media
 leadImage: "/assets/why_I_left_social_media_26_9.jpg"
 ---
