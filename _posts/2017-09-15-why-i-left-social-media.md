@@ -1,7 +1,6 @@
 ---
 title: Why I've Left Social Media
-date: 2017-09-15
-published: true
+date: 2017-09-15 00:00:00 Z
 categories:
 - professional-development
 - character
@@ -10,7 +9,7 @@ tags:
 - character
 - the-whoohoo-space-cadet
 layout: post
-subtitle:
+subtitle: 
 leadImageAlt: Why I've left social media
 leadImage: "/assets/why_i_left_social_media_26_9.jpg"
 ---
