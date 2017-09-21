@@ -14,11 +14,8 @@ exclude:
 include:
 - _pages
 email: hello@designaroni.com
-description: Ian Roberts is a Senior Front End Web Developer & Graphic Designer. Often
-  building custom web solutions for large & small businesses. Working on branding
-  & business strategy projects. Delivering marketing campaigns, email, landing page
-  design & development Obsessively improving Front End tooling & build processes -
-  Eternally Minnesotan, Forever Curious…
+description: A Minneapolis Senior Front End Web Developer & Graphic Designer, Ian Roberts offers custom web site & design services for businesses to improve branding, strategy, marketing campaigns, email, and landing page design & development. Obsessively improving Front End tooling & build processes - Eternally Minnesotan, Forever Curious…
+metadescription: A Minneapolis Web Developer & Graphic Designer, Ian Roberts offers website, design, branding, strategy, marketing campaign, email & landing page services
 baseurl: ''
 url: http://designaroni.com
 urlDevMode: http://0.0.0.0:4000
@@ -51,7 +48,7 @@ prose:
   rooturl: _posts
   siteurl: http://designaroni.com
   media: assets
-  ignore: 
+  ignore:
   metadata:
     _posts:
     - name: layout
@@ -101,7 +98,7 @@ prose:
         element: text
         label: This is a label to the user
         help: this is a help to accompany the label
-        value: 
+        value:
         placeholder: "/assets/unsplash_vadim_sherbakov_26-9.jpeg"
     - name: leadImageAlt
       field:
