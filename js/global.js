@@ -36,3 +36,8 @@ $(window).load(function() {
   $('body').removeClass('preload');
   $('html').addClass('preloaded');
 });
+$(window).on("unload", function(){
+  if(localStorage.li_ignored){
+    localStorage.removeItem("li_ignored")
+  }
+})
