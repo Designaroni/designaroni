@@ -50,6 +50,8 @@ GEM
       jekyll (~> 3.3)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
+    jekyll-seo-tag (2.3.0)
+      jekyll (~> 3.3)
     jekyll-sitemap (1.1.1)
       jekyll (~> 3.3)
     jekyll-watch (1.5.0)
@@ -93,7 +95,8 @@ DEPENDENCIES
   jekyll
   jekyll-assets
   jekyll-feed
+  jekyll-seo-tag (~> 2.3)
   jekyll-sitemap
 
 BUNDLED WITH
-   1.14.5
+   1.15.4
