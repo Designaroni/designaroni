@@ -1,4 +1,3 @@
-# designaroni.github.io
-Designaroni Pages
+# designaroni.com
 
-visit http://designaroni.github.io to see working portfolio, built with jekyll.
+visit http://designaroni.com to see the working site.

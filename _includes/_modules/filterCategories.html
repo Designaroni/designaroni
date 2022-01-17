@@ -1,9 +1,0 @@
-{% comment %}Loop Through All Categories{% endcomment %}
-<section class="post-categories-filter">
-  <h2>Filter Categories</h2>
-    {% for category in site.categories %}
-      {% assign categoryname = [category | first] %}
-      <a class="post-categories-tag {{ categoryname }}"><span class="hide-all"></span>{{ categoryname }}<span class="show-all"></span></a>
-    {% endfor %}
-</section>
-{% include _modules/loopPostsDisplayCategories.html %}
